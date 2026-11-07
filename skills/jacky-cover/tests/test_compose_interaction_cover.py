@@ -150,4 +150,17 @@ class CoverTests(unittest.TestCase):
         self.assertTrue(info['body_cut_anchored'])
         self.assertEqual(info['placed_bbox_before_dissolve'][3],round(1440*.8))
 
+    def test_side_bleed_sits_flush_with_cover_edge(self):
+        import subprocess,sys
+        im=Image.new('RGBA',(400,400));ImageDraw.Draw(im).rectangle((120,60,399,399),fill=(20,20,20,255))
+        src=self.root/'bleed.png';im.save(src)
+        r=subprocess.run([sys.executable,str(ROOT/'scripts/sticker_edge.py'),str(src),str(self.root/'e.png')],capture_output=True,text=True)
+        self.assertIn('CROPPED right',r.stderr)
+        out=self.root/'b.png'
+        r=subprocess.run([sys.executable,str(ROOT/'scripts/sticker_edge.py'),str(src),str(out),'--bleed','right'],capture_output=True,text=True)
+        self.assertEqual(r.returncode,0,r.stderr)
+        p,_=c.profile();layer,info=c.place_scene(out,p)
+        self.assertEqual(info['bleed_sides'],['right'])
+        self.assertEqual(info['placed_bbox_before_dissolve'][2],1080)
+
 if __name__=='__main__':unittest.main()

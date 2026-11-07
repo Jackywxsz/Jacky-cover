@@ -127,6 +127,7 @@ def place_scene(path, p, anchor_cut=True):
         require(source.format == 'PNG' and 'A' in source.getbands(), 'Scene must be a PNG with real alpha')
         require(not getattr(source, 'is_animated', False), 'Animated scene is unsupported')
         im = source.convert('RGBA')
+        bleed = set(filter(None, source.info.get('jacky_cover_bleed', '').split(',')))
     a = im.getchannel('A')
     require(a.getextrema() == (0, 255), 'Scene needs transparent background and opaque subjects')
     visible = sum(a.histogram()[1:])/(im.width*im.height)
@@ -149,10 +150,16 @@ def place_scene(path, p, anchor_cut=True):
     anchored = body_cut and anchor_cut
     if anchored:
         y1 = round(h*p['body_cut_anchor_y'])
+    # A body cut off at the left/right edge (marked by sticker_edge --bleed) sits flush with that
+    # cover edge, so it reads as continuing out of frame instead of ending in a hard line mid-canvas.
+    bleed_left, bleed_right = 'left' in bleed, 'right' in bleed
+    if bleed_left: x0 = 0
+    if bleed_right: x1 = w
     scale = min((x1-x0)/subject.width, (y1-y0)/subject.height)
     size = (max(1, round(subject.width*scale)), max(1, round(subject.height*scale)))
     resized = subject.resize(size, Image.Resampling.LANCZOS)
-    xy = (x0+((x1-x0)-size[0])//2, y1-size[1] if anchored else y0)
+    x = x1-size[0] if bleed_right else x0 if bleed_left else x0+((x1-x0)-size[0])//2
+    xy = (x, y1-size[1] if anchored else y0)
     layer = Image.new('RGBA', (w,h))
     layer.alpha_composite(resized, xy)
     box = layer.getchannel('A').getbbox()
@@ -170,7 +177,7 @@ def place_scene(path, p, anchor_cut=True):
     return layer, {'source_size': list(im.size), 'source_alpha_bbox': list(bbox),
                    'placed_bbox_before_dissolve': list(box), 'placed_bbox': list(layer.getchannel('A').getbbox()),
                    'scale': scale, 'source_upscaled': scale>1,
-                   'bottom_dissolve_y': [fade_start,fade_end], 'top_gap_px': box[1]-y0, 'body_cut_detected': body_cut, 'body_cut_anchored': anchored,
+                   'bottom_dissolve_y': [fade_start,fade_end], 'top_gap_px': box[1]-y0, 'bleed_sides': [n for n, b in (('left', bleed_left), ('right', bleed_right)) if b], 'body_cut_detected': body_cut, 'body_cut_anchored': anchored,
                    'transform': 'uniform whole-scene fit; bottom alpha dissolve into title shadow; no RGB/face edits'}
 
 

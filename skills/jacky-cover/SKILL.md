@@ -40,7 +40,7 @@ scripts/codex_imagegen.sh <项目>/foreground-v1.png <项目>/prompt-v1.txt asse
 scripts/sticker_edge.py <项目>/foreground-v1.png <项目>/foreground-v1-edge.png
 ```
 
-`sticker_edge.py` 若报 `CROPPED`，说明人或物件被画面边缘切了，这张作废，按第 5 节重新生成。
+`sticker_edge.py` 报 `CROPPED` 时先看切到的是什么：只是人物的肩或手臂被左/右边切到（动作模板本身是半身近景，常见），就加 `--bleed right`（或 `left`）重跑，合成时那一侧会贴住封面边缘，读起来是身体延伸出画；切到的是头、手或物件，这张作废，按第 5 节重新生成。
 
 ## 4. 合成
 
