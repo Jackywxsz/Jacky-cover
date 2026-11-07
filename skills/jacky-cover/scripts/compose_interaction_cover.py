@@ -6,7 +6,7 @@ import io
 import json
 from pathlib import Path
 import sys
-from PIL import Image, ImageChops, ImageDraw, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageFont, ImageStat
 
 ROOT = Path(__file__).resolve().parents[1]
 PROFILE = 'references/interaction-profile.json'
@@ -103,6 +103,13 @@ def load_template(root=ROOT):
     return p, base, mask, m
 
 
+def shown(path):
+    # Reports never carry local machine paths: repo files are repo-relative, others keep only the file name.
+    path = Path(path).resolve()
+    repo = ROOT.parents[1]
+    return str(path.relative_to(repo)) if path.is_relative_to(repo) else path.name
+
+
 def font_file(spec, override=None):
     candidates = [Path(override).expanduser()] if override else [
         Path.home()/'Library/Fonts'/spec['filename'],
@@ -115,7 +122,7 @@ def font_file(spec, override=None):
     return found.resolve()
 
 
-def place_scene(path, p):
+def place_scene(path, p, anchor_cut=False):
     with Image.open(path) as source:
         require(source.format == 'PNG' and 'A' in source.getbands(), 'Scene must be a PNG with real alpha')
         require(not getattr(source, 'is_animated', False), 'Animated scene is unsupported')
@@ -129,10 +136,23 @@ def place_scene(path, p):
     subject = im.crop(bbox)
     w, h = p['size']
     x0, y0, x1, y1 = [round(v*(w if i%2==0 else h)) for i,v in enumerate(p['scene_box'])]
+    # Detect an exposed torso cut; only when the caller asks (nothing in the scene hides it)
+    # is the cut anchored low behind the title shadow.
+    # Detected by shape: the lowest rows of the subject form a wide flat opaque cut.
+    # Faint generator haze is ignored when locating the real lower edge.
+    solid = a.point(lambda v: 255 if v > 40 else 0).getbbox()
+    def opaque_width(dy):
+        return a.crop((solid[0], solid[3]-dy, solid[2], solid[3]-dy+1)).point(lambda v: 1 if v > 200 else 0).histogram()[1]
+    # A torso cut keeps nearly vertical sides down to the edge; rounded objects narrow toward their bottom.
+    near, higher = opaque_width(20), opaque_width(40)
+    body_cut = near >= 0.15*(solid[2]-solid[0]) and near >= 0.85*higher
+    anchored = body_cut and anchor_cut
+    if anchored:
+        y1 = round(h*p['body_cut_anchor_y'])
     scale = min((x1-x0)/subject.width, (y1-y0)/subject.height)
     size = (max(1, round(subject.width*scale)), max(1, round(subject.height*scale)))
     resized = subject.resize(size, Image.Resampling.LANCZOS)
-    xy = (x0+((x1-x0)-size[0])//2, y0)
+    xy = (x0+((x1-x0)-size[0])//2, y1-size[1] if anchored else y0)
     layer = Image.new('RGBA', (w,h))
     layer.alpha_composite(resized, xy)
     box = layer.getchannel('A').getbbox()
@@ -150,7 +170,7 @@ def place_scene(path, p):
     return layer, {'source_size': list(im.size), 'source_alpha_bbox': list(bbox),
                    'placed_bbox_before_dissolve': list(box), 'placed_bbox': list(layer.getchannel('A').getbbox()),
                    'scale': scale, 'source_upscaled': scale>1,
-                   'bottom_dissolve_y': [fade_start,fade_end],
+                   'bottom_dissolve_y': [fade_start,fade_end], 'body_cut_detected': body_cut, 'body_cut_anchored': anchored,
                    'transform': 'uniform whole-scene fit; bottom alpha dissolve into title shadow; no RGB/face edits'}
 
 
@@ -158,7 +178,7 @@ def place_scene(path, p):
 def render(scene_path, text, font=None, note_font=None, root=ROOT):
     p, base, mask, manifest = load_template(root)
     scene_path = Path(scene_path).expanduser().resolve()
-    scene, placement = place_scene(scene_path, p)
+    scene, placement = place_scene(scene_path, p, anchor_cut=text.get('hide_cut_behind_title', False))
     lines = text.get('lines', [])
     require(len(lines)==2, 'Exactly two title lines are required')
     for line in lines:
@@ -168,45 +188,76 @@ def render(scene_path, text, font=None, note_font=None, root=ROOT):
         require(not emphasis or line['text'].count(emphasis)==1, 'Emphasis must occur exactly once')
     fp = font_file(p['title'], font)
     w,h = p['size']
-    left, right = round(w*p['title']['left']), round(w*p['title']['right'])
-    size=p['title']['max_size']
-    while size>=p['title']['min_size']:
-        ft=ImageFont.truetype(str(fp),size)
-        if max(ft.getlength(line['text']) for line in lines)<=right-left:
-            break
-        size-=1
-    require(size>=p['title']['min_size'],'Title too long; do not squeeze glyphs')
+    t = p['title']
+    left, right = round(w*t['left']), round(w*t['right'])
+    def fill_size(s):
+        # Largest size whose real advance width fits the safe width.
+        size=t['max_auto_size']
+        while size>=t['min_size'] and ImageFont.truetype(str(fp),size).getlength(s)>right-left:
+            size-=1
+        require(size>=t['min_size'],'Title too long; do not squeeze glyphs')
+        return size
+    # Line 2 (usually longer) fills the safe width; line 1 is one step larger (two when it is short), never wider than the safe width.
+    line2_size=fill_size(lines[1]['text'])
+    line1_units=sum(1 if ord(ch)>0x2e80 else .5 for ch in lines[0]['text'] if not ch.isspace())
+    line1_ratio=t['line1_ratio_short'] if line1_units<=t['short_line1_units'] else t['line1_ratio']
+    sizes=[]
+    for row, line in enumerate(lines):
+        if 'size' in line:
+            require(isinstance(line['size'],int) and t['min_size']<=line['size']<=t['max_override_size'], 'Requested title size outside range')
+            require(ImageFont.truetype(str(fp),line['size']).getlength(line['text'])<=right-left,'Requested title size overflows; do not stretch or silently reflow')
+            sizes.append(line['size'])
+        elif row==0:
+            sizes.append(min(fill_size(line['text']),round(line2_size*line1_ratio)))
+        else:
+            sizes.append(line2_size)
+    def ink_boxes(sizes):
+        probe=ImageDraw.Draw(Image.new('L',(1,1)))
+        return [probe.textbbox((0,0),line['text'],font=ImageFont.truetype(str(fp),s),anchor='ls') for line,s in zip(lines,sizes)]
+    region_top=round(h*t['region_top'])+t['top_pad']
+    def block_metrics(sizes):
+        widths=[ImageFont.truetype(str(fp),s).getlength(line['text']) for line,s in zip(lines,sizes)]
+        side=round((w-max(widths))/2)
+        # Bottom margin is a fixed multiple of the side margin, so the block sits in proportion to its width.
+        return widths, side, h-round(side*t['bottom_margin_ratio'])
+    # Auto-sized lines shrink together until the block fits the bottom-third safe area.
+    while True:
+        boxes=ink_boxes(sizes)
+        widths, block_x, bottom = block_metrics(sizes)
+        if sum(b[3]-b[1] for b in boxes)+t['line_gap']<=bottom-region_top: break
+        auto=[i for i,line in enumerate(lines) if 'size' not in line and sizes[i]>t['min_size']]
+        require(auto,'Title block too tall for the title region')
+        for i in auto: sizes[i]-=1
     ink=Image.new('RGBA',(w,h))
     draw=ImageDraw.Draw(ink)
     title_boxes=[]
-    title_sizes=[]
     title_runs=[]
+    # Stack from the bottom safe line upward: line 2 sits on `bottom`, line 1 sits line_gap above it.
+    baselines=[0,0]
+    baselines[1]=bottom-boxes[1][3]
+    baselines[0]=baselines[1]+boxes[1][1]-t['line_gap']-boxes[0][3]
+    # Lines share one left edge (block_x); the block as a whole is centered horizontally.
     for row, line in enumerate(lines):
-        line_size=line.get('size',size)
-        require(isinstance(line_size,int) and p['title']['min_size']<=line_size<=p['title']['max_override_size'], 'Requested title size outside range')
-        ft=ImageFont.truetype(str(fp),line_size)
-        require(ft.getlength(line['text'])<=right-left,'Requested title size overflows; do not stretch or silently reflow')
-        title_sizes.append(line_size)
-        y=round(p['title']['top'][row]*h)
-        # One shared baseline keeps mixed-color fragments aligned.
-        ascent,_=ft.getmetrics()
-        baseline=y+ascent
-        box=draw.textbbox((left,baseline),line['text'],font=ft,anchor='ls')
-        # Convert requested visual top into a common baseline for this line.
-        baseline+=y-box[1]
-        box=draw.textbbox((left,baseline),line['text'],font=ft,anchor='ls')
-        require(box[0]>=left-1 and box[2]<=right+1 and box[3]<=round(h*p['title']['bottom']), 'Title overflow')
+        ft=ImageFont.truetype(str(fp),sizes[row])
+        x=block_x
+        baseline=baselines[row]
+        box=draw.textbbox((x,baseline),line['text'],font=ft,anchor='ls')
+        require(box[0]>=left-1 and box[2]<=right+1 and box[3]<=bottom+1 and box[1]>=region_top-1, 'Title overflow')
         if title_boxes:
-            require(box[1]>title_boxes[-1][3]+p['title']['min_line_gap'],'Title lines collide')
+            require(box[1]>=title_boxes[-1][3]+t['min_line_gap'],'Title lines collide')
         e=line.get('emphasis')
         if e:
             before,after=line['text'].split(e)
             for fragment,offset,color in [(before,0,'white'),(e,ft.getlength(before),'orange'),(after,ft.getlength(before+e),'white')]:
-                if fragment: draw.text((left+offset,baseline),fragment,font=ft,fill=p['colors'][color],anchor='ls')
+                if fragment: draw.text((x+offset,baseline),fragment,font=ft,fill=p['colors'][color],anchor='ls')
         else:
-            draw.text((left,baseline),line['text'],font=ft,fill=p['colors']['white'],anchor='ls')
+            draw.text((x,baseline),line['text'],font=ft,fill=p['colors']['white'],anchor='ls')
         title_boxes.append(list(box))
-        title_runs.append({'text':line['text'],'emphasis':line.get('emphasis'),'size':line_size,'bbox':list(box)})
+        title_runs.append({'text':line['text'],'emphasis':line.get('emphasis'),'size':sizes[row],'bbox':list(box)})
+    title_sizes=sizes
+    size=max(sizes)
+    pre_mask=Image.alpha_composite(base,scene)
+    under_text=Image.alpha_composite(pre_mask,mask)
     note_info=None
     if text.get('note'):
         note=text['note'];nf=font_file(p['note'],note_font)
@@ -215,24 +266,27 @@ def render(scene_path, text, font=None, note_font=None, root=ROOT):
         require(isinstance(note.get('text'),str) and note['text'].strip() and '\n' not in note['text'],'Invalid note')
         xy=note.get('xy');require(isinstance(xy,list) and len(xy)==2,'Note needs normalized xy')
         ft_note=ImageFont.truetype(str(nf),ns)
-        pos=(round(xy[0]*w),round(xy[1]*h))
+        # x may be "title_left" to align the note with the title block's left edge.
+        nx=min(b[0] for b in title_boxes) if xy[0]=='title_left' else round(xy[0]*w)
+        pos=(nx,round(xy[1]*h))
         nb=draw.textbbox(pos,note['text'],font=ft_note,anchor='lt')
         require(nb[0]>=round(.05*w) and nb[2]<=round(.95*w) and nb[1]>=0 and nb[3]<title_boxes[0][1]-16,'Note outside safe gap')
         # Ignore only <=2/255 invisible alpha dust from the generated cutout; preserve all source pixels.
         require(scene.getchannel('A').crop(nb).getextrema()[1]<=2,'Note overlaps foreground; choose actual negative space')
-        draw.text(pos,note['text'],font=ft_note,fill=p['colors']['ink'],anchor='lt')
-        note_info={'font_file':str(nf),'font_sha256':digest(nf.read_bytes()),'family_style':ft_note.getname(),'size':ns,'bbox':list(nb)}
-    pre_mask=Image.alpha_composite(base,scene)
-    under_text=Image.alpha_composite(pre_mask,mask)
+        # Dark ink on light paper; white once the note sits over the darkening gradient.
+        lum=ImageStat.Stat(under_text.convert('L').crop(nb)).mean[0]
+        note_color=p['colors']['ink'] if lum>=140 else p['colors']['white']
+        draw.text(pos,note['text'],font=ft_note,fill=note_color,anchor='lt')
+        note_info={'font_file':shown(nf),'font_sha256':digest(nf.read_bytes()),'family_style':ft_note.getname(),'size':ns,'bbox':list(nb),'color':note_color}
     final=Image.alpha_composite(under_text,ink)
     report={'template_id':p['template_id'],'size':[w,h],'profile_sha256':manifest['profile_sha256'],
-            'template_files':manifest['files'],'scene_file':str(scene_path),'scene_sha256':digest(scene_path.read_bytes()),
+            'template_files':manifest['files'],'scene_file':shown(scene_path),'scene_sha256':digest(scene_path.read_bytes()),
             'scene':placement,'black_gradient':p['black_gradient'],
             'alpha_8bit_samples':[mask.getpixel((0,round(y*(h-1))))[3] for y in p['black_gradient']['sample_y']],
-            'font_file':str(fp),'font_sha256':digest(fp.read_bytes()),'font_family_style':ft.getname(),
+            'font_file':shown(fp),'font_sha256':digest(fp.read_bytes()),'font_family_style':ft.getname(),
             'font_size':size,'title_font_sizes':title_sizes,'title_runs':title_runs,'title_boxes':title_boxes,'title_region_bbox':[0,round(h*p['title']['region_top']),w,h],'title_line_gap_px':title_boxes[1][1]-title_boxes[0][3],'note':note_info,
             'self_check':'technical_checks_passed_visual_review_required','user_acceptance':'not_claimed',
-            'visual_review_required':['original-photo likeness and skin','both arms shoulder-elbow-wrist-hand before and after mask','Yazai identity AND paper-cut material','semantic relationship','overall reference family and phone thumbnail']}
+            'visual_review_required':['original-photo likeness and skin','body orientation consistent and arms connected','Yazai identity as 3D figure','semantic relationship','overall reference family and phone thumbnail']}
     layers={'background.png':base,'foreground.png':scene,'black-mask.png':mask,'pre-mask.png':pre_mask,'text.png':ink}
     return final,report,layers
 

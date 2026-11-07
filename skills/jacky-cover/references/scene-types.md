@@ -1,0 +1,69 @@
+# 纸蓝封面：3D 抠图前景怎么写
+
+生图出一张**透明背景的方图**：Jacky 真人半身 + 芽仔 3D 手办 + 立体隐喻物件。之后由脚本加白色贴纸边，贴到纸蓝底上，再合成黑蒙版和标题。
+写法借 [gbro-cover-design](https://github.com/pyang5166/gbro-cover-design)（许可见 `research/retired-from-v7/references/gbro-license.txt`）：人物姿势具体、主体元素详细、谁遮挡谁写清楚。
+
+## 三条原则
+
+1. **芽仔是微观世界的主角**：由它推进、执行、串联；Jacky 托着、举着、指着或摆放它所在的物件，手和物件有真实接触。
+2. **只要一个主物件**（如微缩场景、设备、窗口、跑道、卷轴……按内容定）。面板类一律画成苹果风圆角窗口（红黄绿三点、3D 倾斜、干净 UI），不画灰色平板。
+3. **只写一个瞬间**：先一句事件，再写 Jacky 两只手、芽仔动作、物件上有什么、遮挡关系。不写坐标，不堆禁词。
+
+## 风格库（给用户出方案时从这里选）
+
+每期结合主题从这里挑 2–3 个给用户，推荐一个；内容需要时也可以提新风格。用户认可的新风格、用户给的新参考，在这里追加一行，并在下方示例补一条通过的提示词。动作参考见 [pose-library.md](pose-library.md)。
+
+| 风格 | 用在 | Jacky（动作参考） | 芽仔 |
+|---|---|---|---|
+| A 微缩片场 | 管团队、编排、搭建 | 双手悬在微缩场景上方操控，或一手往里放东西（K02） | 在场景中央指挥一群不同造型的小机器人 |
+| B 举设备 | AI 替你干活、新工具、成果 | 双手端电脑朝镜头（K04），或单手推手机（K03） | 站在键盘或屏幕边，把结果从屏幕里推出来 |
+| C 身后窗口 | 教程、步骤、流程、架构 | 站在前面右侧，侧身指向窗口里的关键一步（K05） | 从窗口下沿走出来，推动关键那一步 |
+| D 微观世界（托在掌上） | 一个小系统在运转、看清内部、一件事的全过程 | 单手平托微缩场景，低头看（K01），或另一手指着其中一处（K06） | 在掌上的场景里推进关键一步 |
+
+新构思时可以换的维度：主物件（设备、窗口、模型、机关、书/卷轴、地图、拼图、开关……）、Jacky 的参与方式（托、举、推、指、摆放、观察、拉开、按下）、机位（平视、俯视、近景手部、纵深）、比例（巨人看微缩、等大同框、物件冲向镜头）、芽仔的动作（推、拉、搬、连接、点亮、修理、指挥）。
+
+用户给了 logo、截图、产品形象，作为 image 5、6 上传，写清“image 5 shown on …”，不用通用图标代替，不虚构功能和数字。
+
+## 固定段（每次原文附在提示词末尾）
+
+```
+Identity: images 1 and 2 are original photos of the SAME real man; keep his exact face shape, eyes, eyebrows, nose, lips, ears, short spiky black undercut hair, skin tone and age; no glasses. He wears a plain BLACK CREW-NECK SHORT-SLEEVE T-shirt. Natural, warm, approachable expression, not exaggerated. Photorealistic skin, both arms complete, five fingers per hand. Natural upright posture: head, neck, shoulders, chest and hips on one consistent axis and facing the same direction, no twist or mismatch between upper and lower body. If he reaches toward the scene, his whole torso turns toward it and he uses the arm nearer to the scene with the elbow slightly bent, the arm clearly growing out of that shoulder; never a frontal torso with an arm bolted on sideways.
+Pose (image 4): a pose reference of the same man; copy only his body angle, arm and hand positions and head direction. Ignore its face, background and any props in it unless stated above; his identity always comes from images 1 and 2.
+Yazai (image 3) is a small physical collectible figure (vinyl toy, about the height of a coffee mug unless stated) with exactly this design: big round white helmet, two green sprout leaves on top, featureless glossy black visor with ONE soft reflection on one side, gray round ear covers, red arm bands, white/blue/red chest buttons, short body, short legs, round boots. Only one Yazai; other small characters must look clearly different (e.g. small gray round robots).
+Look: photorealistic, cinematic soft studio key light, crisp detail; Yazai and props are real 3D physical objects with real shadows and reflections. Any screen or panel is a premium Apple-style window: rounded corners, a thin light frame, red/yellow/green traffic-light dots at top-left, clean minimal UI with soft depth, slightly tilted in 3D perspective — never a plain gray board. No readable words anywhere.
+Framing: SQUARE 1:1 image. The whole group (the man plus the metaphor scene) sits in the middle of the square with a wide EMPTY transparent margin on the left, right and top (at least one tenth of the width on each side): his head, both shoulders, both elbows, both hands and every object stay well away from the left, right and top edges. By default his body continues down to about his hips, with the main object in front of his lower torso where possible so the body cut is naturally hidden; by default he is on the right half of the group and the metaphor scene with Yazai on the left half and upper part, at least as large as his upper body — unless this moment is described differently above.
+Cut-out: fully transparent background (real alpha) around the man and the objects; NO room, NO wall, NO desk surface, NO floor, NO backdrop, NO text, NO title, NO dark gradient. Only the man and the described objects exist.
+```
+
+## 示例（2026-11-07 测试通过的提示词，学具体程度，不照抄内容）
+
+### A 微缩片场 · “一个人 / 管好一支AI团队”
+
+```
+One moment: the man leans over a miniature 3D office diorama like a giant and gently places a tiny robot into it, while Yazai leads the little AI team at work.
+The man (images 1 and 2): calm focused slight smile, leaning in from the right; his right hand places a small gray robot figure at a desk, his left hand rests on the edge of the diorama base.
+The diorama: a compact square wooden base about as wide as his shoulders, low glass partitions, five tiny desks with glowing blue mini monitors, five small gray round robot figures working; a small Apple-style whiteboard window with a three-node flow chart.
+Yazai figure (image 3): standing on a tiny round podium in the center of the diorama, one arm pointing at the whiteboard, handing an orange task card to a robot.
+Overlap: the diorama is in front of his torso; his face and both hands stay visible.
+```
+
+### B 举设备 · “告别写报告 / Opus 5.5接管比赛”
+
+```
+One moment: the man holds an open laptop toward the viewer; Yazai, standing on the keyboard, pushes a finished glowing presentation card out of the screen while crumpled paper drafts tumble away beside it.
+The man (images 1 and 2): warm relaxed smile at camera, on the right, standing upright and facing the camera squarely. His two hands hold the left and right sides of the laptop base at chest height, laptop tilted toward the viewer.
+Yazai figure (image 3): standing on the keyboard, both hands pushing a large white Apple-style slide window (simple orange bar chart rising) half out of the screen toward the upper-left; three crumpled paper balls falling from the laptop's left edge.
+Overlap: the laptop covers his chest; his face and both hands stay visible.
+```
+
+### C 身后窗口 · “5步搭好 / 你的AI工作流”
+
+```
+One moment: a large Apple-style app window floats behind him on the left showing a five-step workflow; the man points at it while Yazai steps out of the window and pushes step 3 into place.
+The man (images 1 and 2): standing in front on the right, three-quarter turned toward the window, his right index finger (viewer left) pointing at step 3; left arm relaxed; friendly natural smile at camera.
+The window: tilted in 3D toward the viewer, about as tall as his upper body, upper-left and center. Inside, a clean UI with exactly FIVE rounded step cards in a rising diagonal joined by a thin line, each with a simple icon (note, gear, chat bubble, chart, flag); cards 1-2 orange with a check mark, card 3 half orange, cards 4-5 light gray.
+Yazai figure (image 3): standing on the window's bottom edge as if stepping out of it, both hands pushing card 3 upward into the line.
+Overlap: the window is behind him; his pointing hand is in front of its right edge; face fully visible.
+```
+
+数量要写死（如“exactly FIVE”），否则模型常少画一两个。

@@ -1,0 +1,10 @@
+One moment: the man presents a rising paper path on the left with his open palm; Yazai walks along it lighting up the steps one by one.
+The man (pose like image 1): on the right, facing the camera with a slight smile, his right hand (viewer left) open palm-up at waist height presenting toward the path; left arm relaxed.
+The path: a winding cream paper road starting just beside his open palm and rising toward the upper left, with five round stepping stones; the first three filled orange, the last two still blue outlines.
+Yazai (image 3) standing on the third stone, holding a small paper lantern, one foot lifted toward the fourth stone.
+Overlap: the start of the path sits just above his palm; nothing covers his face or hand.
+
+Reference roles: image 1 = pose and body reference of the man (same person as image 2). Image 2 = original photo of the same man, the identity source: keep his exact face shape, eyes, eyebrows, nose, lips, ears, short spiky black undercut hair, skin tone and age. Image 3 = Yazai mascot identity: big round white helmet, two green sprout leaves on top, featureless black visor with ONE soft reflection on one side, gray round ear covers, red arm bands, chest buttons, short body, short legs, round boots. Other images = content assets, keep them recognizable.
+The man: photorealistic, natural skin texture, plain BLACK CREW-NECK SHORT-SLEEVE T-shirt, no outline, no glow. Both arms complete and anatomically connected, five fingers per hand. Whole head inside the frame.
+Yazai and the miniature scene: thin matte paper cut-out / sticker look with black hand-drawn ink lines, light hatching, shallow paper contact shadows; cream paper with cobalt blue and small orange accents. Not plastic, not glossy 3D, not neon.
+Portrait 3:4. Fully transparent background (real alpha): no backdrop, no floor, no text, no title, no frame, no dark gradient. The man stands on the right half; the main miniature scene occupies the upper-left and center. Keep the top-left corner area empty for a small note. Upper body to mid-thigh; the lower edge of the body fades out naturally.

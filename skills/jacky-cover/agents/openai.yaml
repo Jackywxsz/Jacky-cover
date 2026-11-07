@@ -1,5 +1,5 @@
 interface:
   display_name: "Jacky Cover"
-  short_description: "参考图纸蓝固定底、自然渐变与内容驱动人物互动，原照真人和纸片芽仔自然互动，普惠体分层排版"
+  short_description: "Jacky + 芽仔封面：3D 抠图白边贴纸蓝底，下方黑蒙版普惠体两行标题，霞鹜文楷小字；可选暗调整图风"
   brand_color: "#0138C4"
-  default_prompt: "Use $jacky-cover to understand the content, design a natural Jacky-and-Yazai paper-cut interaction, then composite transparent foreground over the fixed reference-derived paper-blue plate with broad upper-right and left-side washes and a clear upper portrait with the real black alpha mask and Alibaba PuHuiTi typography. Select expressive gestures from references/pose-library.md only after defining the content relationship; keep original Jacky identity. Do not load archived workflows."
+  default_prompt: "Use $jacky-cover: follow SKILL.md — pick the best metaphor and presentation form yourself, write the prompt from references/scene-types.md, generate ONE transparent square 3D cut-out (Jacky + Yazai figure) with scripts/codex_imagegen.sh, add the white sticker edge, composite the paper-blue cover, pick the handwritten note position with scripts/note_space.py, then check and deliver."

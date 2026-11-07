@@ -5,3 +5,18 @@ __pycache__/
 .env
 .env.*
 /output/
+
+# 2026-11-07 生图实验：只提交提示词、检查记录、总览图和定稿成品，中间大图留本地
+experiments/cover-*/**/*.png
+experiments/covers/**/*.png
+experiments/covers/**/*.log
+experiments/covers/**/*layers*/
+experiments/cover-*/**/*.log
+experiments/cover-*/**/err
+experiments/cover-*/**/*.err
+experiments/cover-*/**/layers*/
+experiments/pose-library*/raw/
+experiments/pose-library*/inputs/
+!experiments/cover-paper3d/*/cover-v6*.png
+
+!experiments/covers/*/cover-v*.png

@@ -101,7 +101,7 @@ class CoverTests(unittest.TestCase):
         self.assertEqual(report['title_font_sizes'][0],160)
         self.assertGreater(report['title_font_sizes'][0],report['title_font_sizes'][1])
         self.assertEqual(report['title_runs'][1]['emphasis'],'最强实力')
-        colors=set(layers['text.png'].getdata())
+        colors={c for _,c in layers['text.png'].getcolors(1<<24)}
         self.assertIn((255,255,255,255),colors)
         self.assertIn((247,147,0,255),colors)
         with self.assertRaisesRegex(ValueError,'overflows'):
@@ -116,5 +116,38 @@ class CoverTests(unittest.TestCase):
         old=out.read_bytes()
         with self.assertRaisesRegex(ValueError,'exists'):c.save_result(im,report,layers,out,rp)
         self.assertEqual(old,out.read_bytes())
+    def test_title_block_centered_lines_left_aligned(self):
+        _,report,_=c.render(self.scene,{'lines':[{'text':'一个人'},{'text':'管好一支AI团队','emphasis':'AI团队'}]})
+        b1,b2=report['title_boxes'];s1,s2=report['title_font_sizes']
+        self.assertLessEqual(abs(b1[0]-b2[0]),12)            # shared left edge (glyph side bearings differ slightly)
+        self.assertLessEqual(abs(b2[0]-(1080-b2[2])),12)     # longer line 2 makes the block centered
+        self.assertGreater(s1,s2)                            # short line 1 is larger
+        self.assertLessEqual(abs((1440-b2[3])-2*b2[0]),14)   # bottom margin = 2x side margin
+    def test_note_aligns_with_title_left(self):
+        im=Image.new('RGBA',(300,400));d=ImageDraw.Draw(im);d.rectangle((200,150,290,380),fill=(255,255,255,255));d.rectangle((10,330,40,380),fill=(255,255,255,255))
+        scene=self.root/'right.png';im.save(scene)
+        text=dict(self.text,note={'text':'配置全公开','xy':['title_left',.05],'size':48})
+        _,report,_=c.render(scene,text)
+        self.assertEqual(report['note']['bbox'][0],min(b[0] for b in report['title_boxes']))
+    def test_sticker_edge_rejects_cropped_cutout(self):
+        import subprocess,sys
+        im=Image.new('RGBA',(300,300));ImageDraw.Draw(im).rectangle((150,40,299,299),fill=(0,0,0,255))
+        src=self.root/'cut.png';im.save(src)
+        r=subprocess.run([sys.executable,str(ROOT/'scripts/sticker_edge.py'),str(src),str(self.root/'o.png')],capture_output=True,text=True)
+        self.assertNotEqual(r.returncode,0);self.assertIn('CROPPED right',r.stderr)
+        ok=Image.new('RGBA',(300,300));ImageDraw.Draw(ok).rectangle((80,40,220,299),fill=(0,0,0,255))
+        ok.save(src);out=self.root/'ok.png'
+        r=subprocess.run([sys.executable,str(ROOT/'scripts/sticker_edge.py'),str(src),str(out)],capture_output=True,text=True)
+        self.assertEqual(r.returncode,0,r.stderr)
+        with Image.open(out) as e: self.assertEqual(e.getpixel((e.width//2,5))[3],0)
+
+    def test_body_cut_anchors_to_canvas_bottom(self):
+        im=Image.new('RGBA',(400,400));ImageDraw.Draw(im).rectangle((150,60,330,399),fill=(20,20,20,255))
+        src=self.root/'cut-body.png';im.save(src)
+        p,_=c.profile();_,info=c.place_scene(src,p)
+        self.assertTrue(info['body_cut_detected']);self.assertFalse(info['body_cut_anchored'])
+        _,info=c.place_scene(src,p,anchor_cut=True)
+        self.assertTrue(info['body_cut_anchored'])
+        self.assertEqual(info['placed_bbox_before_dissolve'][3],round(1440*.8))
 
 if __name__=='__main__':unittest.main()

@@ -1,0 +1,139 @@
+{
+  "template_id": "jacky-paper-blue-interaction-v8",
+  "size": [
+    1080,
+    1440
+  ],
+  "profile_sha256": "fd4c704529d9356e1e0016aba261a9338bb83ea433cf0bfe8f18395c6b79711f",
+  "template_files": {
+    "assets/covers/paper-blue-interaction-v4.png": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f",
+    "assets/covers/black-gradient-v7.png": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4"
+  },
+  "scene_file": "experiments/cover-paper3d/01-opus/foreground-v1a.png",
+  "scene_sha256": "5859fcd35aa5bddd58bed89147685a18a700b8f032e6f0bc7d2c1af23209cd75",
+  "scene": {
+    "source_size": [
+      1086,
+      1448
+    ],
+    "source_alpha_bbox": [
+      0,
+      0,
+      1086,
+      1448
+    ],
+    "placed_bbox_before_dissolve": [
+      105,
+      65,
+      974,
+      1224
+    ],
+    "placed_bbox": [
+      105,
+      65,
+      974,
+      1221
+    ],
+    "scale": 0.800414364640884,
+    "source_upscaled": false,
+    "bottom_dissolve_y": [
+      1136,
+      1224
+    ],
+    "transform": "uniform whole-scene fit; bottom alpha dissolve into title shadow; no RGB/face edits"
+  },
+  "black_gradient": {
+    "interpolation": "smoothstep",
+    "start_y": 0.45,
+    "end_y": 0.89,
+    "max_alpha": 0.94,
+    "sample_y": [
+      0,
+      0.38,
+      0.5,
+      0.6,
+      0.68,
+      0.77,
+      0.9,
+      0.94,
+      1
+    ]
+  },
+  "alpha_8bit_samples": [
+    0,
+    0,
+    9,
+    64,
+    128,
+    196,
+    240,
+    240,
+    240
+  ],
+  "font_file": "<user-fonts>/Alibaba-PuHuiTi-Bold.ttf",
+  "font_sha256": "8af30eb7415fb7c9dc3518cce5cc8e9afbdce09831ccaa7361774b21273f67fb",
+  "font_family_style": [
+    "Alibaba PuHuiTi",
+    "Bold"
+  ],
+  "font_size": 184,
+  "title_font_sizes": [
+    184,
+    106
+  ],
+  "title_runs": [
+    {
+      "text": "告别写报告",
+      "emphasis": null,
+      "size": 184,
+      "bbox": [
+        65,
+        961,
+        970,
+        1127
+      ]
+    },
+    {
+      "text": "Opus 5.5接管比赛",
+      "emphasis": "接管比赛",
+      "size": 106,
+      "bbox": [
+        65,
+        1153,
+        935,
+        1260
+      ]
+    }
+  ],
+  "title_boxes": [
+    [
+      65,
+      961,
+      970,
+      1127
+    ],
+    [
+      65,
+      1153,
+      935,
+      1260
+    ]
+  ],
+  "title_region_bbox": [
+    0,
+    960,
+    1080,
+    1440
+  ],
+  "title_line_gap_px": 26,
+  "note": null,
+  "self_check": "technical_checks_passed_visual_review_required",
+  "user_acceptance": "not_claimed",
+  "visual_review_required": [
+    "original-photo likeness and skin",
+    "both arms shoulder-elbow-wrist-hand before and after mask",
+    "Yazai identity AND paper-cut material",
+    "semantic relationship",
+    "overall reference family and phone thumbnail"
+  ]
+}
