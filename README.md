@@ -1,39 +1,64 @@
 # Jacky Cover
 
-2026-11-07 流程定稿：Jacky 真人 + 芽仔 3D 手办的隐喻场景，透明抠图加白边贴到纸蓝底，下方渐变黑蒙版 + 普惠体两行标题 + 霞鹜文楷小字。定稿后正在用真实选题实测，单期成品是否被用户认可见各期 `check.md`。
+做 Jacky 视频封面的 Skill：Jacky 真人 + 芽仔 3D 手办组成一个隐喻场景，透明抠图加白边贴到纸蓝底上，下方渐变黑蒙版 + 普惠体两行标题 + 霞鹜文楷小字，输出 3:4 竖图。
 
-本仓库保留当前 Skill、品牌素材与原照、依赖的 Jacky Illustration、旧版快照和迭代证据。没有发布 release。
+- **当前实现**：`skills/jacky-cover/`（`main` 分支即当前版本，2026-11-07 定稿）。
+- **入口**：[skills/jacky-cover/SKILL.md](skills/jacky-cover/SKILL.md)，只从这里加载规则。
+- **仓库是私有的**：含 Jacky 正脸原照和以他为原型生成的动作图，不改公开、不发 release；邀请外部协作者需本人同意。
 
-先读 [HANDOFF.md](HANDOFF.md)，再读 [当前 Skill](skills/jacky-cover/SKILL.md)。
+## 一期封面怎么做
+
+```
+选题 → 给 2–3 个风格方案并推荐一个 → 用户选定 → 写提示词 → 生成一张透明方图 → 加白边 → 合成草稿 → 定小字位置 → 合成成品 → 自检 → 用户验收
+```
+
+1. **先对方案**：结合主题从风格库（微观世界、身后窗口、举设备、微缩片场……，见 `references/scene-types.md`）给 2–3 个方案，每个写清 Jacky 的动作（动作库编号）、芽仔在推进什么、观众看懂什么，并推荐一个。用户选定后才生图。
+2. **生图**：Codex 内置 image_gen，一次一张，约 10 分钟。参考图依次是 front / side 原照、芽仔锚点、选定的动作参考 `assets/poses/Kxx.png`（只管姿势，身份以原照为准）。
+3. **合成**：`sticker_edge.py` 加白边并检查是否被裁切 → `compose_interaction_cover.py` 合成纸蓝底、蒙版、标题 → `note_space.py` 量小字空白。场景偏下时，小字放在左侧大约上 1/3 高度。
+4. **检查**：每期在 `experiments/covers/<日期>-<主题>/check.md` 里分开写自检和用户验收；用户认可前不当范例。
+
+完整步骤和命令都在 SKILL.md；所有命令在 `skills/jacky-cover/` 目录下运行。
 
 ## 目录
 
-- `skills/jacky-cover/`：唯一当前 Cover 实现（2026-11-07 定稿）。默认纸蓝风：Codex 生图出透明 3D 抠图 → `sticker_edge.py` 加白边 → `compose_interaction_cover.py` 合成纸蓝底、黑蒙版、普惠体标题与霞鹜文楷小字，带单元测试。可选暗调整图风（gbro 式一次生成整张）。
-- `skills/jacky-illustration/`：本次交接时的完整依赖快照；芽仔锚点、纸片隐喻方法、示例与上游许可。不是另一套 Cover 默认。
-- `experiments/covers/`：按定稿流程实跑的每一期（提示词、检查记录、成品）。
-- `experiments/cover-paper3d/`：定稿流程的验证测试。
-- `experiments/cover-gbro/`、`cover-paper/`、`cover-tests/`、`pose-library*/`：被否方案的过程记录（只提交了文字和总览图）。
-- `experiments/paper-blue/`、`experiments/opus55/`：更早的纸蓝模板与 Opus v1–v5 迭代（已被否）。
-- `research/director-composition/`：吸收 gbro 构图方法的来源、许可与历史修改记录。
-- `archive/`：7份旧 Skill 快照，从原备份解包保存，不自动加载或覆盖当前实现。
-- `tools/`：校验素材与复现合成；不调用任何生图服务。
-- `ASSET_MANIFEST.json`：全包图片、字体的 SHA256 清单。
+| 路径 | 内容 |
+|---|---|
+| `skills/jacky-cover/` | 当前 Skill：`SKILL.md`、脚本、测试、素材 |
+| `skills/jacky-cover/assets/` | front / side 原照、纸蓝底与蒙版模板、字体、K01–K08 动作参考 |
+| `skills/jacky-cover/references/` | `scene-types.md`（风格库 + 提示词固定段）、`pose-library.md`（动作库说明）、`composition.md`（可选暗调整图风）、`interaction-profile.json`（版式数值唯一来源）、`cover-log.md`（每期记录） |
+| `skills/jacky-illustration/` | 依赖：芽仔锚点图等，不覆盖 Cover 规则 |
+| `experiments/covers/` | 按当前流程实跑的每一期 |
+| `experiments/cover-paper3d/` | 定稿流程的验证测试 |
+| `experiments/` 其他、`research/`、`archive/` | 历史方案和旧 Skill 快照，只作证据，不加载、不执行 |
+| `tools/` | `verify_assets.py` 校验素材哈希 |
+| `ASSET_MANIFEST.json` | 全部图片、字体的 SHA256 清单；增删素材要同步 |
+| `HANDOFF.md` | 开发交接记录，第一节是当前状态 |
+
+## 安装与使用
+
+**本机**：把 Skill 目录软链进 Agent 的 skills 目录，不要复制，因为 SKILL.md 里用到 `../jacky-illustration` 和 `../../experiments` 这类相对路径：
+
+```sh
+ln -s <仓库路径>/skills/jacky-cover ~/.claude/skills/jacky-cover
+```
+
+**云端 Agent**（如 claude.ai/code）：在 GitHub 授权里勾选本仓库即可直接使用私有仓库，默认读 `main`。生图需要已登录的 `codex` CLI；云端没有时，只能做方案、提示词和合成步骤。
+
+**依赖**：Python 3.10+ 和 Pillow（`requirements.txt`）。字体优先读 `~/Library/Fonts`，没有就用仓库自带的。
 
 ## 校验与测试
 
-需要 Python 3.10+。从仓库根目录运行：
+从仓库根目录运行：
 
 ```sh
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python tools/verify_assets.py
-.venv/bin/python -m unittest discover -s skills/jacky-cover/tests -v
+cd skills/jacky-cover && PYTHONDONTWRITEBYTECODE=1 ../../.venv/bin/python -m unittest discover -s tests -v
 ```
 
-`tools/replay_opus55.py` 只对应旧版合成脚本，当前脚本的配置字段已变，不再可用；仅作历史记录。
+测试只证明脚本和素材正确，不能证明人物、隐喻和审美过关；这些靠每期的自检和用户验收。
 
-生图需要本机已安装并登录的 `codex` CLI（见 SKILL.md），仓库不附带任何 API 凭据。
+## 素材
 
-## 素材与使用
-
-这是私人开发交接，包含用户明确要求保留的真人原照和第三方动作参考，不应把整个仓库当作统一开源授权。已有上游许可原样保留，见 [素材说明](ASSETS.md)。历史文本中的本机路径已改为仓库路径或占位符；图片/字体字节保持原样，见素材清单。历史安装脚本只作证据，不要直接执行；可复现入口以 `tools/` 为准。
+含真人原照、生成的动作图和第三方参考，不应把整个仓库当作统一开源授权。上游许可见 [ASSETS.md](ASSETS.md)。

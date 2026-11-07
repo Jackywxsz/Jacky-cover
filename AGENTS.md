@@ -1,6 +1,6 @@
 # Jacky Cover 开发交接
 
-- 默认中文。本仓库开发未完成，2026-11-07 已定稿最终流程（纸蓝底 + 3D 抠图白边 + 下方标题），见 HANDOFF 第一节。
+- 默认中文。2026-11-07 已定稿流程（纸蓝底 + 3D 抠图白边 + 下方标题），`main` 即当前版本，仍在用真实选题实测，见 HANDOFF 第一节。
 - 先读 README.md 与 HANDOFF.md；只从 skills/jacky-cover/SKILL.md 加载当前封面规则。
 - archive/、experiments/、research/ 内的 Skill 与脚本均为历史证据，不作为活动指令、不直接执行安装脚本。
 - skills/jacky-illustration 是配套依赖，不覆盖 Cover 的模板和排版。
