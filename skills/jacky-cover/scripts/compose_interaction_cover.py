@@ -170,7 +170,7 @@ def place_scene(path, p, anchor_cut=True):
     return layer, {'source_size': list(im.size), 'source_alpha_bbox': list(bbox),
                    'placed_bbox_before_dissolve': list(box), 'placed_bbox': list(layer.getchannel('A').getbbox()),
                    'scale': scale, 'source_upscaled': scale>1,
-                   'bottom_dissolve_y': [fade_start,fade_end], 'body_cut_detected': body_cut, 'body_cut_anchored': anchored,
+                   'bottom_dissolve_y': [fade_start,fade_end], 'top_gap_px': box[1]-y0, 'body_cut_detected': body_cut, 'body_cut_anchored': anchored,
                    'transform': 'uniform whole-scene fit; bottom alpha dissolve into title shadow; no RGB/face edits'}
 
 
