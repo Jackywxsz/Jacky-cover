@@ -1,0 +1,5 @@
+interface:
+  display_name: "Jacky Cover"
+  short_description: "沿用 Oil Cover 内容设计，只注入纸蓝品牌与自然的 Jacky 上半身形象"
+  brand_color: "#0138C4"
+  default_prompt: "Use $jacky-cover with the Oil Cover workflow: inspect relevant evidence, distinguish headline, subtitle and visual proof, then apply the paper-blue brand and a natural recognizable upper-body Jacky portrait without fixing the pose or layout."

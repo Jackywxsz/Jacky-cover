@@ -1,0 +1,21 @@
+{
+  "changes": [
+    {
+      "path": "skills/jacky-cover/SKILL.md",
+      "before": "8d543b5b9c7e109fedfcd70c8df17e7e12724b72c8abe74e65795f2ecf84b6aa",
+      "after": "124c2c1e0b1ad928861bb11aa18b0ebf0e7ba2f2de72fc5dcd20aec12dae2687"
+    },
+    {
+      "path": "skills/jacky-cover/references/scene-direction.md",
+      "before": "c4f0b9db7c756ae8bbc7e48010d03806e2459583c16c1ae33c282d7569c509dc",
+      "after": "4fac90ec4f40e49eabe6d8167ba6cbae2d5088e43ce325b6201c0c0732efba3c"
+    },
+    {
+      "path": "skills/jacky-cover/references/pose-library.md",
+      "before": "677b7835f6e51beeffcae74ff15405cb0bb4d9700dba2c6d486d55b9c18ee652",
+      "after": "d6fc37952e09fa3e272c076fe91361abfb35987a6a5e8d6387bde449a036c015"
+    }
+  ],
+  "single_source": "skills/jacky-cover",
+  "backup": "experiments/opus55/工作区/v5动作约束修复/skill-before"
+}

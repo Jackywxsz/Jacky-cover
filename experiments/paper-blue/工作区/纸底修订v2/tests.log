@@ -1,0 +1,17 @@
+test_actual_mask_black_values_and_continuity (test_compose_interaction_cover.CoverTests.test_actual_mask_black_values_and_continuity) ... ok
+test_background_is_paper_dominant_with_local_blue (test_compose_interaction_cover.CoverTests.test_background_is_paper_dominant_with_local_blue) ... ok
+test_lower_cutoff_dissolves_without_repainting_rgb (test_compose_interaction_cover.CoverTests.test_lower_cutoff_dissolves_without_repainting_rgb) ... ok
+test_missing_or_wrong_font_rejected (test_compose_interaction_cover.CoverTests.test_missing_or_wrong_font_rejected) ... ok
+test_note_collision_rejected (test_compose_interaction_cover.CoverTests.test_note_collision_rejected) ... ok
+test_opaque_background_and_fake_transparency_rejected (test_compose_interaction_cover.CoverTests.test_opaque_background_and_fake_transparency_rejected) ... ok
+test_render_really_applies_mask (test_compose_interaction_cover.CoverTests.test_render_really_applies_mask) ... ok
+test_repeated_render_deterministic_and_title_only_change (test_compose_interaction_cover.CoverTests.test_repeated_render_deterministic_and_title_only_change) ... ok
+test_saved_outputs_and_overwrite_rejected (test_compose_interaction_cover.CoverTests.test_saved_outputs_and_overwrite_rejected) ... ok
+test_template_tampering_or_double_shading_rejected (test_compose_interaction_cover.CoverTests.test_template_tampering_or_double_shading_rejected) ... ok
+test_text_errors_and_overflow_rejected (test_compose_interaction_cover.CoverTests.test_text_errors_and_overflow_rejected) ... ok
+test_white_subject_stays_opaque_and_no_crop (test_compose_interaction_cover.CoverTests.test_white_subject_stays_opaque_and_no_crop) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 2.497s
+
+OK

@@ -1,0 +1,11 @@
+{
+  "status": "skill_update_complete",
+  "active_skill": "skills/jacky-cover/SKILL.md",
+  "scope": "导演构图方法吸收",
+  "research": "输出版本/研究与吸收说明.md",
+  "sources": "输入资料/sources.json",
+  "evidence": "工作区/verification.json",
+  "accepted_brand_assets_unchanged": true,
+  "new_image_calls": 0,
+  "image_quality_claim": "not tested by this documentation update"
+}

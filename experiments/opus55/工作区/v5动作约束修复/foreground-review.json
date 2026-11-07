@@ -1,0 +1,71 @@
+{
+  "source": "<LOCAL_CODEX>/generated_images/01a1b402-bb54-7042-95a1-0609e3bdfb06/exec-936841bb-9bf5-48d5-af79-3b0cb8fd89cd.png",
+  "sha256": "ac8d17111ce3b559a584b24c736d93733c0e506a7bb21c58f2c3ecb29f32db93",
+  "size": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "review_type": "manual_visual_review_not_automatic_anatomy_detection",
+  "anatomy": "passed_visible_shoulder_elbow_wrist_continuity",
+  "right_arm_image_left": {
+    "approx_normalized_nodes": {
+      "shoulder": [
+        0.51,
+        0.38
+      ],
+      "sleeve_exit": [
+        0.49,
+        0.56
+      ],
+      "elbow": [
+        0.44,
+        0.68
+      ],
+      "wrist": [
+        0.26,
+        0.58
+      ],
+      "palm": [
+        0.18,
+        0.56
+      ]
+    },
+    "observation": "上臂由左侧袖口向下至屈肘，前臂向左上连续伸到腕与向上手掌。蓝纸平台仅搭在手掌上方，未盖住肘腕。",
+    "hand_limit": "手掌侧视，手指并拢重叠；可见拇指侧轮廓，不能逐根独立计数，未见额外分叉或反折。"
+  },
+  "left_arm_image_right": {
+    "approx_normalized_nodes": {
+      "shoulder": [
+        0.86,
+        0.38
+      ],
+      "sleeve_exit": [
+        0.89,
+        0.56
+      ],
+      "elbow": [
+        0.9,
+        0.69
+      ],
+      "wrist": [
+        0.88,
+        0.88
+      ],
+      "hand": [
+        0.87,
+        0.94
+      ]
+    },
+    "observation": "上臂从右侧袖口自然向下，肘到前臂连续，腕接垂手，拇指在身体侧，无跨胸错接。"
+  },
+  "identity": "与原始正面照人工对照：正面闭嘴自然表情，无明显白斑、压脸或描边；生成图不保证像素级一致。",
+  "yazai": "双叶、黑无五官面罩、胸钮、红臂带、短腿圆靴可见；薄纸墨线，躯干部分被折页自然遮挡。",
+  "semantic_limit": "能看见芽仔展示调研清单、标注图、演示图表的相连成果；接管全过程与单指令因果仍需小字补充，不记为语义完全通过。",
+  "allowed_next_step": "compose_anatomy_validation_proof_not_accepted_final",
+  "user_acceptance": "pending"
+}

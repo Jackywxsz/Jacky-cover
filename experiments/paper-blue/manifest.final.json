@@ -1,0 +1,35 @@
+{
+  "status": "user_accepted_v7_preferences_documented",
+  "active_skill": "skills/jacky-cover/SKILL.md",
+  "legacy_backup": "工作区/旧版备份/jacky-cover-legacy-before-template-v1.tar.gz",
+  "legacy_status": "shelved_no_automatic_fallback",
+  "previous_v6": "rejected; preserved in 工作区/新版实施/pre-template-manifest.json",
+  "current_trial": "输出版本/右侧标题收紧与上部提亮/如何发挥-GrokBot最强实力.png",
+  "technical_tests": "13 tests passed; installed render matches; original foreground/background unchanged; 1/3 region and 45px gap verified",
+  "user_acceptance": {
+    "status": "accepted",
+    "scope": "当前右侧封面；不代表未来所有生成均已验收",
+    "evidence": "用户：这一张我先保存了；把这几次调整的偏好跟要求写进 Skill",
+    "date": "2026-11-07"
+  },
+  "visual_limitations": [
+    "未来新生成人物、芽仔比例与内容隐喻仍须逐次独立验收"
+  ],
+  "report": "工作区/右侧标题收紧与上部提亮/验收记录.md",
+  "new_image_calls": 1,
+  "active_template": "v7",
+  "new_image_calls_this_revision": 0,
+  "calls_scope": "typography and independent black mask only",
+  "pose_library": {
+    "references": 10,
+    "action_entries": 15,
+    "path": "skills/jacky-cover/references/pose-library.md"
+  },
+  "user_scope": "only right cover; left untouched",
+  "preference_consolidation": {
+    "report": "工作区/已接受模板规范固化/验收记录.md",
+    "template_changed": false,
+    "renderer_changed": false,
+    "new_image_calls": 0
+  }
+}

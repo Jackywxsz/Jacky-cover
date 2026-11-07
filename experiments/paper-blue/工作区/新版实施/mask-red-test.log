@@ -1,0 +1,22 @@
+test_render_really_applies_mask (test_compose_interaction_cover.CoverTests.test_render_really_applies_mask) ... FAIL
+
+======================================================================
+FAIL: test_render_really_applies_mask (test_compose_interaction_cover.CoverTests.test_render_really_applies_mask)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<LOCAL_TEMP>/test_compose_interaction_cover.py", line 35, in test_render_really_applies_mask
+    self.assertEqual(im.getpixel(pt)[:3],expected)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Tuples differ: (131, 170, 252) != (105, 136, 202)
+
+First differing element 0:
+131
+105
+
+- (131, 170, 252)
++ (105, 136, 202)
+
+----------------------------------------------------------------------
+Ran 1 test in 0.144s
+
+FAILED (failures=1)

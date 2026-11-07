@@ -1,0 +1,26 @@
+{
+  "mode": "new_generation_from_originals",
+  "prior_generated_portrait_used": false,
+  "inputs": [
+    {
+      "path": "skills/jacky-cover/assets/jacky-reference-front.jpg",
+      "role": "original_identity",
+      "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+    },
+    {
+      "path": "skills/jacky-cover/assets/jacky-reference-side.jpg",
+      "role": "original_identity",
+      "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/ip/yazai-paper-blue-anchor-v1.png",
+      "role": "original_yazai",
+      "sha256": "3f2a18c4e59c826edda99c2862881a5584fd6b9beff581f0c834606277d7ec8e"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧最强实力测试/用户指定Bot军团形象.png",
+      "role": "subject_reference",
+      "sha256": "705dd5c8cf162eb4d7a186bc33c0e25c55585ed759a57c61ef0ae7272a55d7d1"
+    }
+  ]
+}

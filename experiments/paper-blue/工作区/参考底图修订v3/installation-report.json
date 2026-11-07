@@ -1,0 +1,22 @@
+{
+  "active_template": "v3",
+  "backup": "experiments/paper-blue/工作区/旧版备份/jacky-cover-template-v2-before-reference-plate.tar.gz",
+  "backup_sha256": "934ba5af41ce27811eaf8699a67921288e8faec83fca2ce3dc1c896297546419",
+  "backup_files_verified": 13,
+  "installed_files": {
+    "SKILL.md": "5e20c979f60910db83ca6ac54a322aebf6e735424cbc6aee1a76e297d1f5f5d1",
+    "references/interaction-profile.json": "1a96b476b9910f7a1e02360ab7d711b444d63fdb148b71577d2582290ce4e0e8",
+    "references/visual-system.md": "88f3b8389e09540603250df859e45f79c0140c415498228f81ce897c4481fbb3",
+    "tests/test_compose_interaction_cover.py": "2815cc08232bcc0d39be990ef364a824814bcb9552cb1e9fb757725d2d3fa574",
+    "agents/openai.yaml": "c90d4788fa15395db3ffc1d9472621a23b4c08e6d1c6293f5772e5ae4ce2b88a",
+    "scripts/compose_interaction_cover.py": "35807a7f210eda267417b6c9079d6d861224d98348f08f5723354fbf949c47d5",
+    "assets/jacky-reference-casual.jpg": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08",
+    "assets/jacky-reference-front.jpg": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884",
+    "assets/jacky-reference-side.jpg": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8",
+    "assets/jacky-reference-gesture.jpg": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f",
+    "assets/covers/paper-blue-interaction-v3.png": "533cfd9079084f7facc45076049527c897e033a6f5c3eb37dcaea9d739151591",
+    "assets/covers/template-manifest-v3.json": "c503aad425450e72875fd9afbc40eca760445d6a55f3a4a640fd1195a9d63af4",
+    "assets/covers/black-gradient-v3.png": "c5095ea6bf64bfff945ff1f7cbfd6b5835501c502a5108feba1e4582b3e85b34"
+  },
+  "original_photos_unchanged": true
+}

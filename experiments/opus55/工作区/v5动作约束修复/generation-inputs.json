@@ -1,0 +1,22 @@
+[
+  {
+    "path": "skills/jacky-cover/assets/jacky-reference-front.jpg",
+    "role": "original_identity_front",
+    "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+  },
+  {
+    "path": "skills/jacky-cover/assets/jacky-reference-side.jpg",
+    "role": "original_identity_side",
+    "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+  },
+  {
+    "path": "skills/jacky-illustration/assets/ip/yazai-paper-blue-anchor-v1.png",
+    "role": "yazai_identity_medium",
+    "sha256": "3f2a18c4e59c826edda99c2862881a5584fd6b9beff581f0c834606277d7ec8e"
+  },
+  {
+    "path": "skills/jacky-cover/assets/pose-references/10-six-pose-overview.png",
+    "role": "pose_only_P13_bottom_left_single_open_palm_other_arm_down",
+    "sha256": "76e35e763e7007d7a5a24f5f57cdfdb1dac9ed9cc83447522d79a089862d2227"
+  }
+]

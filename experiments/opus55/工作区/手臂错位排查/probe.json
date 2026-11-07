@@ -1,0 +1,40 @@
+{
+  "raw_generation_unchanged": true,
+  "raw_sha256": "ee1b8aba136a36c87b4f9c6cac03073c8b1c766c24c35e51355c6b4879458405",
+  "compositor_reproduction_pixel_equal": true,
+  "placement": {
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_alpha_bbox": [
+      0,
+      17,
+      1246,
+      1254
+    ],
+    "placed_bbox_before_dissolve": [
+      54,
+      65,
+      1026,
+      1030
+    ],
+    "placed_bbox": [
+      54,
+      65,
+      1026,
+      1026
+    ],
+    "scale": 0.7800963081861958,
+    "source_upscaled": false,
+    "bottom_dissolve_y": [
+      942,
+      1030
+    ],
+    "transform": "uniform whole-scene fit; bottom alpha dissolve into title shadow; no RGB/face edits"
+  },
+  "arm_error_present_before_compositing": true,
+  "visual_finding": "递卡手腕/前臂向画面右下进入文件夹遮挡区，未建立到画面左侧上臂的可信连续连接；托夹手臂可见。不能把遮挡直接认定为自然连接。",
+  "generation_internal_reason": "unknown; prompt complexity and occlusion are risk factors, not a proved model-internal causal trace",
+  "new_generation_calls": 0
+}

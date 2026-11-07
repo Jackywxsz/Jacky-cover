@@ -1,0 +1,30 @@
+{
+  "status": "rejected_by_user_handoff_incomplete",
+  "active_skill": "skills/jacky-cover/SKILL.md",
+  "template": "jacky-paper-blue-interaction-v7-opus-handoff-v3",
+  "output": "输出版本/v5/告别写报告-Opus55接管比赛.png",
+  "generation_mode": "built-in image_gen",
+  "generation_calls": 7,
+  "generative_retries": 0,
+  "prompt": "工作区/v5动作约束修复/foreground.prompt.txt",
+  "inputs": "工作区/v5动作约束修复/generation-inputs.json",
+  "text": "工作区/v5动作约束修复/text.json",
+  "report": "输出版本/v5/render-report.json",
+  "visual_review": "工作区/v5动作约束修复/验收记录.md",
+  "user_acceptance": "rejected: 这张不行; user requests GitHub handoff for further optimization",
+  "title_normalization": "口述Obs五点五按用户截图排为Opus 5.5",
+  "previous_output": "输出版本/v4修正版/告别写报告-Opus55接管比赛.png",
+  "generation_calls_this_revision": 1,
+  "active_skill_modified": true,
+  "rejected_output": "输出版本/v4/告别写报告-Opus55接管比赛.png",
+  "director_skill_used": true,
+  "diagnostic_evidence": "工作区/手臂错位排查/probe.json",
+  "previous_visual_pass_retracted": true,
+  "next_step": "Hand off unfinished Skill and full references; no further image generation requested",
+  "self_check": {
+    "anatomy": "manual_pass_with_side_view_finger_overlap_limit",
+    "template": "passed",
+    "semantic": "partial",
+    "final_accepted": false
+  }
+}

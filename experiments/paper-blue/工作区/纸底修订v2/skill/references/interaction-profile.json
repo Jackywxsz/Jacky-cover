@@ -1,0 +1,88 @@
+{
+  "template_id": "jacky-paper-blue-interaction-v2",
+  "size": [
+    1080,
+    1440
+  ],
+  "background": {
+    "paper": "#F7F1E7",
+    "edge_blue": "#92B3ED",
+    "blue_spots": [
+      {
+        "center": [
+          1.04,
+          0.07
+        ],
+        "radius": [
+          0.23,
+          0.23
+        ],
+        "strength": 0.65
+      },
+      {
+        "center": [
+          -0.06,
+          0.46
+        ],
+        "radius": [
+          0.15,
+          0.24
+        ],
+        "strength": 0.16
+      }
+    ],
+    "grain_amplitude": 1,
+    "grain_seed": 20261107
+  },
+  "black_alpha_stops": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.5,
+      0.2
+    ],
+    [
+      0.75,
+      0.8
+    ],
+    [
+      1.0,
+      0.95
+    ]
+  ],
+  "scene_box": [
+    0.05,
+    0.115,
+    0.95,
+    0.85
+  ],
+  "title": {
+    "top": [
+      0.7625,
+      0.8736
+    ],
+    "left": 0.05556,
+    "right": 0.94444,
+    "bottom": 0.965,
+    "max_size": 150,
+    "min_size": 80,
+    "family": "Alibaba PuHuiTi",
+    "style": "Bold",
+    "filename": "Alibaba-PuHuiTi-Bold.ttf"
+  },
+  "note": {
+    "filename": "LXGWWenKai-Regular.ttf",
+    "family": "LXGW WenKai",
+    "style": "Regular",
+    "max_size": 40,
+    "min_size": 24
+  },
+  "colors": {
+    "white": "#FFFFFF",
+    "orange": "#F79300",
+    "ink": "#1B1E24"
+  },
+  "scene_bottom_fade_px": 88
+}

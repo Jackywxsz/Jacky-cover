@@ -1,0 +1,9 @@
+{
+  "status": "rejected_by_user",
+  "reasons": [
+    "人物右侧原始生成裁切",
+    "表情偏离用户自然形象"
+  ],
+  "output": "输出版本/v4/告别写报告-Opus55接管比赛.png",
+  "do_not_promote": true
+}

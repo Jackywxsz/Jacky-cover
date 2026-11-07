@@ -1,0 +1,20 @@
+Use case: ads-marketing.
+Asset type: exact 3:4 portrait cover; localized edit of image 1.
+Input images: Image 1 is the v3 EDIT TARGET, keep its established cover. Image 2 is only a handwriting style reference. Images 3 and 4 are original Jacky identity photographs, not pose references; image 5 is Yazai identity anchor.
+Primary request: Make exactly two changes. Completely REMOVE all white outlines around the HUMAN. Move the small handwritten text away from top center to the blank paper space BELOW Yazai and his conveyor, and make it one size smaller. Preserve the successful cover's other design choices.
+Content attribution: same GrokBot content-production metaphor as target.
+Title text: Preserve exact bottom main title "如何用GrokBot" / "搭建自媒体军团". The secondary annotation is exactly "Bot军团全公开", appearing ONCE below the mascot. Erase it from top; restore clean paper-blue background where it was.
+Composition: Keep portrait, hand-button contact, one Yazai, conveyor and three output cards in their existing places. Treat the small text as a relaxed handwritten note fitted around the illustration, not a heading or centered subtitle. Place it on light PAPER just under the mascot/conveyor, left of the human forearm/torso, above the giant main headline: roughly x=9%–38%, y=63%–66% of the image. Aim for about 32–36px character height at 1080px canvas width, about 65–70% of the previous top annotation's size. Keep a clear gap beneath paper objects and above main title; near-horizontal with tiny organic handwriting variation, no banner. Its position follows the composition's negative space. No top-centered text. Do not shift or enlarge the main scene or bottom headline.
+Portrait integration guard: retain Jacky's face, age, anatomy, pose, black short sleeves, natural hair and skin. Remove the entire artificial WHITE keyline from hair, ears, jaw, neck, both shoulders, arms, hand, fingers and torso. Also remove any beige/yellow remnants or glowing rims. Human has a clean NATURAL PHOTOGRAPHIC silhouette with subtle natural integration and NO colored stroke, NO white contour, NO paper backing, NO halo. Preserve fine real hair strands without white spikes. Keep the existing warm paper-cut borders on Yazai and paper objects; this outline removal applies only to the human.
+Mandatory visible background: preserve warm white paper center, blue gradient outer edges, and the smooth black lower fade beneath the main headline. Keep the note area light enough for dark handwriting, as in target's blank region below conveyor; do not add a box or separate light patch.
+Colour system: unchanged white/orange bottom title, black T-shirt, blue button, warm paper, blue edges. Small note is dark ink #1B1E24. No outline color on human.
+Screen crop plan: no screen; preserve scene.
+Screenshot distillation plan: reference image 2 ONLY for relaxed rounded handwritten strokes matching its top small text, not its words or composition.
+Visual communication plan: person triggers the production machine, Yazai operates it; small annotation follows this scene and stays secondary.
+Screen refinement plan: unchanged cards, mascot and apparatus.
+Shadow plan: keep object's shallow paper shadows; human natural contour only, no halo/keyline.
+Text style: small subtitle uses relaxed handwritten Chinese and handwritten Latin Bot, noticeably smaller than before. Main headline's giant bold typography and two-line layout unchanged.
+Title decoration: none. No arrows, underline, banner or speech bubble added.
+Decoration: none added.
+Jacky brand patch: same photograph Jacky with black crew-neck short sleeves, single faceless sprout astronaut Yazai, warm paper-blue collage and white/orange headline. Preserve the identity of both characters.
+Avoid: top-center subtitle, duplicated text, large annotation, annotation over dark gradient or overlapping main title, human white/yellow stroke, sticker backing around person, changed face or pose, distorted hand, added elements, extra subtitle words, new logos or watermark.

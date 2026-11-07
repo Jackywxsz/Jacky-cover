@@ -1,0 +1,129 @@
+{
+  "status": "passed",
+  "active_source": "skills/jacky-cover",
+  "modified": {
+    "SKILL.md": "8d543b5b9c7e109fedfcd70c8df17e7e12724b72c8abe74e65795f2ecf84b6aa",
+    "references/visual-system.md": "105d40222a9ff7459fb4b56c34c408e6972f60cc5a3671589e4a86ab0670bb92",
+    "references/pose-library.md": "677b7835f6e51beeffcae74ff15405cb0bb4d9700dba2c6d486d55b9c18ee652"
+  },
+  "added": {
+    "references/scene-direction.md": "c4f0b9db7c756ae8bbc7e48010d03806e2459583c16c1ae33c282d7569c509dc",
+    "references/gbro-license.txt": "4c93a1ae07083c31b245d46ce8409f7126a19c5e2b6e13f5b839d7acd00ee25e"
+  },
+  "unchanged": {
+    "references/interaction-profile.json": "5d34fe28bf5f6e02396dfe5e81575db483382d803795440c1bde8ca7467a933c",
+    "scripts/compose_interaction_cover.py": "608fef76ad081c7b4395a80210e6c70fd3caa2299d1e8ab1db242e7bed39d657",
+    "assets/covers/paper-blue-interaction-v4.png": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f",
+    "assets/covers/black-gradient-v7.png": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4",
+    "assets/jacky-reference-front.jpg": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884",
+    "assets/jacky-reference-side.jpg": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+  },
+  "relative_links": [
+    {
+      "from": "SKILL.md",
+      "to": "references/visual-system.md"
+    },
+    {
+      "from": "SKILL.md",
+      "to": "references/visual-system.md"
+    },
+    {
+      "from": "SKILL.md",
+      "to": "references/interaction-profile.json"
+    },
+    {
+      "from": "SKILL.md",
+      "to": "references/scene-direction.md"
+    },
+    {
+      "from": "SKILL.md",
+      "to": "references/pose-library.md"
+    },
+    {
+      "from": "SKILL.md",
+      "to": "references/scene-direction.md"
+    },
+    {
+      "from": "references/visual-system.md",
+      "to": "scene-direction.md"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "scene-direction.md"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/sources.json"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/01-phone-forward.png"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/02-laptop-present.png"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/03-phone-demo.png"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/04-two-options-compare.png"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/05-arms-crossed.png"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/06-dual-direction-guide.png"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/07-seated-host.png"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/08-diagram-guide.png"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/09-team-orchestration.png"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/10-six-pose-overview.png"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/10-six-pose-overview.png"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/10-six-pose-overview.png"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/10-six-pose-overview.png"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/10-six-pose-overview.png"
+    },
+    {
+      "from": "references/pose-library.md",
+      "to": "../assets/pose-references/10-six-pose-overview.png"
+    },
+    {
+      "from": "references/scene-direction.md",
+      "to": "gbro-license.txt"
+    }
+  ],
+  "skill_structure_validation": "Skill is valid!",
+  "behavior_walkthrough": "行为走查.md",
+  "new_image_calls": 0,
+  "new_services": 0,
+  "new_active_skill_entries": 0,
+  "visual_generation_validation": "not performed; future generated output still needs user review"
+}

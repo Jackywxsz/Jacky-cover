@@ -1,0 +1,13 @@
+{
+  "template_id": "jacky-paper-blue-interaction-v1",
+  "size": [1080, 1440],
+  "background": {
+    "paper": "#FFF7F0", "edge_blue": "#89B0FF", "lower_blue": "#3255DC",
+    "edge_width": 0.29, "lower_transition": [0.42, 0.96], "grain_amplitude": 1, "grain_seed": 20261107
+  },
+  "black_alpha_stops": [[0.0, 0.0], [0.5, 0.2], [0.75, 0.6], [1.0, 0.8]],
+  "scene_box": [0.05, 0.08, 0.95, 0.78],
+  "title": {"top": [0.7625, 0.8736], "left": 0.05556, "right": 0.94444, "bottom": 0.965, "max_size": 150, "min_size": 80, "family": "Alibaba PuHuiTi", "style": "Bold", "filename": "Alibaba-PuHuiTi-Bold.ttf"},
+  "note": {"filename": "LXGWWenKai-Regular.ttf", "family": "LXGW WenKai", "style": "Regular", "max_size": 40, "min_size": 24},
+  "colors": {"white": "#FFFFFF", "orange": "#F79300", "ink": "#1B1E24"}
+}

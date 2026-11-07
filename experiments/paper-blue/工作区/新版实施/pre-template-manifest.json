@@ -1,0 +1,39 @@
+{
+  "status": "rejected_requires_workflow_redesign",
+  "user_acceptance": "v6 rejected: unclear/missing free arm, background palette/gradient drift, lost paper-cut mascot material",
+  "self_check": {
+    "aspect": "PASS 1080x1440 exact3:4; uniformly resized from1086x1448",
+    "background": "FAIL against latest explicit reference: cold near-white/gray instead of warm paper/blue edge/deep blue-purple lower region",
+    "font": "PASS actual Alibaba PuHuiTi Bold.ttf loaded; family/style verified;139px;file SHA256 recorded",
+    "text": "main title exact two lines; bounding boxes within safe margins",
+    "shoulder": "right shoulder and sleeve fully inside canvas; minimum gap visually around2%, less than target5%",
+    "portrait": "previous acceptance withdrawn: both-arm continuity was not verified",
+    "subtitle": "correct wording, under scene; generated handwritten appearance, not font-file verified",
+    "thumbnail": "270x360 visually reviewed",
+    "gradient": "NOT VERIFIED: prompt-only target, no actual alpha mask implemented",
+    "mascot_material": "FAIL user feedback: paper-cut/sticker identity of material not retained"
+  },
+  "tool": "built-in image_gen for base; user-authorized Pillow font-file typesetting for main title",
+  "calls": 6,
+  "current_image": "输出版本/JackyCover-清爽纸蓝-普惠体-3x4-v6.png",
+  "rejected_image": "工作区/未采用-v1/JackyCover-紫蓝剪纸互动-3x4-v1.png",
+  "skill_updated": [
+    "skills/jacky-cover/SKILL.md",
+    "skills/jacky-cover/references/visual-system.md"
+  ],
+  "rollback": "Restore matching files from 工作区/skill修改前备份 only if current rule changes still belong to this task; compare before overwriting later edits.",
+  "prompt": "工作区/cover_3x4-v6-base.prompt.md",
+  "reference_inputs": [
+    "original front photo",
+    "original side photo",
+    "Yazai anchor only"
+  ],
+  "comparison": "output/v5-原照-v4-v5-人脸对照.png",
+  "unresolved": [
+    "user aesthetic and likeness acceptance",
+    "right margin narrower than suggested5%, but shoulder not cropped"
+  ],
+  "typeset_record": "工作区/v6/typeset-record.json",
+  "skill_audit": "工作区/skill-audit-v6.md",
+  "planning_artifact": "工作区/JackyCover-固定规范与执行重构方案.md"
+}

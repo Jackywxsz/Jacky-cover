@@ -1,0 +1,68 @@
+{
+  "template_id": "jacky-paper-blue-interaction-v7-opus-handoff-v3",
+  "size": [
+    1080,
+    1440
+  ],
+  "background": {
+    "mode": "fixed_reference_plate",
+    "asset": "assets/covers/paper-blue-interaction-v4.png",
+    "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f",
+    "description": "Preserved warm-paper design, blue hue corrected from lavender; broad upper-right and left wash",
+    "paper_master": "assets/covers/masters/paper-blue-paper-master-v3.png",
+    "paper_master_sha256": "533cfd9079084f7facc45076049527c897e033a6f5c3eb37dcaea9d739151591"
+  },
+  "scene_box": [
+    0.05,
+    0.045,
+    0.95,
+    0.85
+  ],
+  "title": {
+    "top": [
+      0.7013888888888888,
+      0.8388888888888889
+    ],
+    "left": 0.05556,
+    "right": 0.94444,
+    "bottom": 0.965,
+    "max_size": 150,
+    "min_size": 80,
+    "family": "Alibaba PuHuiTi",
+    "style": "Bold",
+    "filename": "Alibaba-PuHuiTi-Bold.ttf",
+    "max_override_size": 240,
+    "region_top": 0.6666666666666666,
+    "min_line_gap": 32
+  },
+  "note": {
+    "filename": "字体传奇南安体-免费商用.ttf",
+    "family": "ziticqnananti",
+    "style": "Regular",
+    "max_size": 52,
+    "min_size": 24
+  },
+  "colors": {
+    "white": "#FFFFFF",
+    "orange": "#F79300",
+    "ink": "#1B1E24"
+  },
+  "scene_bottom_fade_px": 88,
+  "black_gradient": {
+    "interpolation": "smoothstep",
+    "start_y": 0.45,
+    "end_y": 0.89,
+    "max_alpha": 0.94,
+    "sample_y": [
+      0,
+      0.38,
+      0.5,
+      0.6,
+      0.68,
+      0.77,
+      0.9,
+      0.94,
+      1
+    ]
+  }
+}

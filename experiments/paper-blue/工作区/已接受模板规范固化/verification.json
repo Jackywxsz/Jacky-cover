@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "installed_documents": {
+    "SKILL.md": "2c836bc97b9c2b6bfb1001f18fec8e63ea35b87ec61a99e78a66b920581a7439",
+    "references/visual-system.md": "9537ea8026a1dcb8c509fc12aa7486608d07710cf079de9a4a3c52f16fd94911"
+  },
+  "unchanged_runtime_and_assets": {
+    "references/interaction-profile.json": "5d34fe28bf5f6e02396dfe5e81575db483382d803795440c1bde8ca7467a933c",
+    "scripts/compose_interaction_cover.py": "608fef76ad081c7b4395a80210e6c70fd3caa2299d1e8ab1db242e7bed39d657",
+    "assets/covers/black-gradient-v7.png": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4",
+    "assets/covers/paper-blue-interaction-v4.png": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+  },
+  "single_skill_source": "skills/jacky-cover",
+  "user_accepted_image": "输出版本/右侧标题收紧与上部提亮/如何发挥-GrokBot最强实力.png",
+  "new_image_calls": 0
+}

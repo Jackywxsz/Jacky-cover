@@ -1,0 +1,5 @@
+interface:
+  display_name: "Jacky Cover"
+  short_description: "固定纸蓝底图与真实渐变，原照真人和纸片芽仔自然互动，普惠体分层排版"
+  brand_color: "#0138C4"
+  default_prompt: "Use $jacky-cover to understand the content, design a natural Jacky-and-Yazai paper-cut interaction, then composite transparent foreground over the fixed paper-blue template with the real black alpha mask and Alibaba PuHuiTi typography. Do not load archived workflows."

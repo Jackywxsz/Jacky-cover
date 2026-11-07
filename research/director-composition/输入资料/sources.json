@@ -1,0 +1,46 @@
+{
+  "retrieved_at": "2026-11-07",
+  "gbro_tree_sha": "8d1a0a5487e9ee6539b2b0a471b58469aadfedd6",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "source": "https://github.com/pyang5166/gbro-cover-design/blob/main/SKILL.md",
+      "blob_sha": "f4c6aa030fb25ff4bd7bbc8620638e5913f1a2aa"
+    },
+    {
+      "path": "LICENSE",
+      "source": "https://github.com/pyang5166/gbro-cover-design/blob/main/LICENSE",
+      "blob_sha": "e2a3364fa669bea16cb4e0946aedf605784e7f52"
+    },
+    {
+      "path": "references/examples.md",
+      "source": "https://github.com/pyang5166/gbro-cover-design/blob/main/references/examples.md",
+      "blob_sha": "ce73ea40bd54a92f44e7da4e3f16895b88cc63c8"
+    },
+    {
+      "path": "references/style-03-产品主视觉风.md",
+      "source": "https://github.com/pyang5166/gbro-cover-design/blob/main/references/style-03-%E4%BA%A7%E5%93%81%E4%B8%BB%E8%A7%86%E8%A7%89%E9%A3%8E.md",
+      "blob_sha": "f7505b6f4f27b264d670bbe1e728d1b9c3eb9d94"
+    },
+    {
+      "path": "references/style-04-对比卡片风.md",
+      "source": "https://github.com/pyang5166/gbro-cover-design/blob/main/references/style-04-%E5%AF%B9%E6%AF%94%E5%8D%A1%E7%89%87%E9%A3%8E.md",
+      "blob_sha": "4c0464d1c50189e84e0192e4dfb50276cc86a9e3"
+    },
+    {
+      "path": "references/style-06-海报拼贴风.md",
+      "source": "https://github.com/pyang5166/gbro-cover-design/blob/main/references/style-06-%E6%B5%B7%E6%8A%A5%E6%8B%BC%E8%B4%B4%E9%A3%8E.md",
+      "blob_sha": "d5273b7243d235ff084063c780dbabe0fb604533"
+    },
+    {
+      "path": "references/style-07-人物侧置留白风.md",
+      "source": "https://github.com/pyang5166/gbro-cover-design/blob/main/references/style-07-%E4%BA%BA%E7%89%A9%E4%BE%A7%E7%BD%AE%E7%95%99%E7%99%BD%E9%A3%8E.md",
+      "blob_sha": "af1dd4a36c57c6b841f7d42a665e7163112b8a1e"
+    },
+    {
+      "path": "upstream-SKILL.md",
+      "source": "https://github.com/hongfamonvAI/oh-my-cover-design/blob/main/SKILL.md",
+      "blob_sha": "f5cb7d5b1e6e0e80a9871352a924174d4fb890c2"
+    }
+  ]
+}

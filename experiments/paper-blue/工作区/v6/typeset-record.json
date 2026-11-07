@@ -1,0 +1,51 @@
+{
+  "font_file": "skills/jacky-cover/assets/fonts/Alibaba-PuHuiTi-Bold.ttf",
+  "font_family_style": [
+    "Alibaba PuHuiTi",
+    "Bold"
+  ],
+  "font_sha256": "8af30eb7415fb7c9dc3518cce5cc8e9afbdce09831ccaa7361774b21273f67fb",
+  "font_size": 139,
+  "original_size": [
+    1086,
+    1448
+  ],
+  "final_size": [
+    1080,
+    1440
+  ],
+  "uniform_resize": true,
+  "face_or_skin_edit": false,
+  "main_title_generated": false,
+  "title_placements": [
+    {
+      "text": "如何用GrokBot",
+      "size": 139,
+      "xy": [
+        60,
+        1098
+      ],
+      "bbox": [
+        60,
+        1098,
+        1013,
+        1227
+      ]
+    },
+    {
+      "text": "搭建自媒体军团",
+      "size": 139,
+      "xy": [
+        60,
+        1258
+      ],
+      "bbox": [
+        60,
+        1258,
+        1019,
+        1385
+      ]
+    }
+  ],
+  "output": "experiments/paper-blue/输出版本/JackyCover-清爽纸蓝-普惠体-3x4-v6.png"
+}

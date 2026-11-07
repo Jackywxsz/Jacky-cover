@@ -1,0 +1,16 @@
+{
+  "development_status": "unfinished_user_rejected_latest_image",
+  "asset_hash_checks": 349,
+  "current_skill_original_images_byte_identical": 35,
+  "unit_tests": "13/13 passed with Python 3.13 and Pillow 12.1.0",
+  "offline_replay": "1080x1440; pixel-identical to rejected source v5; bundled explicit fonts",
+  "visual_acceptance": "NOT PASSED; user rejected v5",
+  "privacy_scan": {
+    "files": 709,
+    "credential_regex_findings": 0,
+    "private_machine_path_or_hostname_findings": 0,
+    "gps_metadata_findings": 0
+  },
+  "archive_snapshots": 7,
+  "new_image_generation_calls": 0
+}

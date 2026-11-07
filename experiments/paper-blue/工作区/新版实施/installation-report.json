@@ -1,0 +1,23 @@
+{
+  "installed_at": "2026-11-07T12:23:10.853716",
+  "target": "skills/jacky-cover",
+  "backup": "experiments/paper-blue/工作区/旧版备份/jacky-cover-legacy-before-template-v1.tar.gz",
+  "installed_files": {
+    "SKILL.md": "adba9bf3914e964989d3fb59c54c8224f8e4faba0da2e397ea5989919c1655eb",
+    "references/interaction-profile.json": "e12e1b49a27b035df77d983650ca8800210168d619ee14e011e2b5049c865bb3",
+    "references/visual-system.md": "5f70eb16df5e677ae58cc18d75270cc20249da45e8329c0d8771f6d73ea8a215",
+    "tests/test_compose_interaction_cover.py": "21baf7ea674caa7897ceba63029efa26d27957473141476d077a91093ac6b3f2",
+    "agents/openai.yaml": "6c6a318d4ee241b8a99f3d381e81bb20ff362b6b15f654573b70b96c48974cc0",
+    "scripts/compose_interaction_cover.py": "12b8488e267b52e38f8a0dad65b96ecc541fd26fd6fd244522249e2cbb65e0c8",
+    "assets/covers/paper-blue-interaction-v1.png": "4ad08141787823641c31b170a95a29778f850c520b2720d4de995385394360fe",
+    "assets/covers/template-manifest.json": "75f0642ffe2c5f6ac5cc5f525080ccb1e74d42415036e0e97e7ff4e708d567c4",
+    "assets/covers/black-gradient-v1.png": "4001ed28e361b73982657c2d2ef2f8acf96af9fe45c47ec90c4d062167493bb1"
+  },
+  "removed_legacy_files": [
+    "scripts/validate_run.py",
+    "tests/test_validate_run.py",
+    "tests/__pycache__/test_validate_run.cpython-313.pyc"
+  ],
+  "original_photos": "hashes unchanged",
+  "alias_resolves_to": "skills/jacky-cover"
+}

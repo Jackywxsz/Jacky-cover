@@ -1,0 +1,7 @@
+interface:
+  display_name: "Jacky 视觉图解"
+  short_description: "封面与配图双模式：内容理解、芽仔互动、固定品牌底图和真实人物分层"
+  brand_color: "#0138C4"
+  default_prompt: "使用 $jacky-illustration，按封面或配图用途理解内容并设计芽仔动作；小红书封面复用固定干净底图和原人物层，配图按信息密度组织且不加人物。"
+policy:
+  allow_implicit_invocation: true

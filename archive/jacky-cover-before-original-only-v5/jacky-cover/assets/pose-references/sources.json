@@ -1,0 +1,92 @@
+[
+  {
+    "id": "R01",
+    "file": "assets/pose-references/01-phone-forward.png",
+    "sha256": "a6d19f1e9e9c25dead31692c923e9ec6a92f44f586c77799f07b91721c1d6c9d",
+    "source": "user supplied screenshot, 2026-11-07",
+    "original_filename": "codex-clipboard-9ffd29cd-e3fe-4f63-8571-00dc558c7164.png",
+    "role": "pose/perspective/object interaction only; not identity/style/text reference",
+    "status": "reference_received"
+  },
+  {
+    "id": "R02",
+    "file": "assets/pose-references/02-laptop-present.png",
+    "sha256": "2ddbb6cdf68b279489b16e852370fc508fc82eba545110404a24bcf2cee9ee08",
+    "source": "user supplied screenshot, 2026-11-07",
+    "original_filename": "codex-clipboard-05d3e3f1-687e-475e-8d72-7bdde4eefae0.png",
+    "role": "pose/perspective/object interaction only; not identity/style/text reference",
+    "status": "reference_received"
+  },
+  {
+    "id": "R03",
+    "file": "assets/pose-references/03-phone-demo.png",
+    "sha256": "240b8b881a8afdb94d56f2a1b52877158f5e1d07a68779ffa34a96b76e45882e",
+    "source": "user supplied screenshot, 2026-11-07",
+    "original_filename": "codex-clipboard-f58dd098-09e7-480f-b98c-039f7ca560b7.png",
+    "role": "pose/perspective/object interaction only; not identity/style/text reference",
+    "status": "reference_received"
+  },
+  {
+    "id": "R04",
+    "file": "assets/pose-references/04-two-options-compare.png",
+    "sha256": "b144e469133e6bedb2fd8e9befcbe09ad1aed77bafcd544d1fd013f19884c534",
+    "source": "user supplied screenshot, 2026-11-07",
+    "original_filename": "codex-clipboard-0f7f8818-72a1-46d0-8d2d-bcb19cba63be.png",
+    "role": "pose/perspective/object interaction only; not identity/style/text reference",
+    "status": "reference_received"
+  },
+  {
+    "id": "R05",
+    "file": "assets/pose-references/05-arms-crossed.png",
+    "sha256": "8f0984271f3304afac0ce4fb41f7ab924c78e2823ea2e47eb16f1feb283bf507",
+    "source": "user supplied screenshot, 2026-11-07",
+    "original_filename": "codex-clipboard-8e795bc9-554f-4232-bfcd-069ba839986c.png",
+    "role": "pose/perspective/object interaction only; not identity/style/text reference",
+    "status": "reference_received"
+  },
+  {
+    "id": "R06",
+    "file": "assets/pose-references/06-dual-direction-guide.png",
+    "sha256": "7aeff62b57bed3fd511ccb6b450cf3e5771fcec063642b0098a6840e840b834f",
+    "source": "user supplied screenshot, 2026-11-07",
+    "original_filename": "codex-clipboard-248b0847-f4a5-4188-a658-ea59e7f028b9.png",
+    "role": "pose/perspective/object interaction only; not identity/style/text reference",
+    "status": "reference_received"
+  },
+  {
+    "id": "R07",
+    "file": "assets/pose-references/07-seated-host.png",
+    "sha256": "ffcb7950148db439a0257860fa99e2fd6d00a479ce2f93b26fef2ecc093eb455",
+    "source": "user supplied screenshot, 2026-11-07",
+    "original_filename": "codex-clipboard-852287dd-6534-4bdd-ac36-09a66b7ae6e5.png",
+    "role": "pose/perspective/object interaction only; not identity/style/text reference",
+    "status": "reference_received"
+  },
+  {
+    "id": "R08",
+    "file": "assets/pose-references/08-diagram-guide.png",
+    "sha256": "00bf294fb789e1b1742c055889f439ae41d7889c73d19eed0d14f8b24484cdd6",
+    "source": "user supplied screenshot, 2026-11-07",
+    "original_filename": "codex-clipboard-30960d9c-b2bb-4d4f-86b4-2dca818e9add.png",
+    "role": "pose/perspective/object interaction only; not identity/style/text reference",
+    "status": "reference_received"
+  },
+  {
+    "id": "R09",
+    "file": "assets/pose-references/09-team-orchestration.png",
+    "sha256": "fece09fc35c0ea957bacb173f3b4cd9bc1a0c7065d9ed80242d8dd036668cdbc",
+    "source": "user supplied screenshot, 2026-11-07",
+    "original_filename": "codex-clipboard-81a9ca6f-5cca-467e-9c9b-db949e6bff09.png",
+    "role": "pose/perspective/object interaction only; not identity/style/text reference",
+    "status": "reference_received"
+  },
+  {
+    "id": "R10",
+    "file": "assets/pose-references/10-six-pose-overview.png",
+    "sha256": "76e35e763e7007d7a5a24f5f57cdfdb1dac9ed9cc83447522d79a089862d2227",
+    "source": "user supplied screenshot, 2026-11-07",
+    "original_filename": "codex-clipboard-cd6030b4-9134-4482-8fd1-be1a95084045.png",
+    "role": "pose/perspective/object interaction only; not identity/style/text reference",
+    "status": "reference_received"
+  }
+]

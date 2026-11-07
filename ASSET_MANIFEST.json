@@ -1,0 +1,1750 @@
+{
+  "format": 1,
+  "assets": [
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/covers/black-gradient-v4.png",
+      "bytes": 8318,
+      "sha256": "4773f00ece5fbb2399a20e69914fab64b28f8dfdd79c634afa974d4bc6b18155"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/covers/masters/paper-blue-paper-master-v3.png",
+      "bytes": 1528823,
+      "sha256": "533cfd9079084f7facc45076049527c897e033a6f5c3eb37dcaea9d739151591"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/covers/paper-blue-interaction-v4.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/jacky-reference-casual.jpg",
+      "bytes": 328789,
+      "sha256": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/jacky-reference-front.jpg",
+      "bytes": 12498631,
+      "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/jacky-reference-gesture.jpg",
+      "bytes": 12341114,
+      "sha256": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/jacky-reference-side.jpg",
+      "bytes": 1432047,
+      "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/pose-references/01-phone-forward.png",
+      "bytes": 713899,
+      "sha256": "a6d19f1e9e9c25dead31692c923e9ec6a92f44f586c77799f07b91721c1d6c9d"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/pose-references/02-laptop-present.png",
+      "bytes": 928963,
+      "sha256": "2ddbb6cdf68b279489b16e852370fc508fc82eba545110404a24bcf2cee9ee08"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/pose-references/03-phone-demo.png",
+      "bytes": 603529,
+      "sha256": "240b8b881a8afdb94d56f2a1b52877158f5e1d07a68779ffa34a96b76e45882e"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/pose-references/04-two-options-compare.png",
+      "bytes": 743181,
+      "sha256": "b144e469133e6bedb2fd8e9befcbe09ad1aed77bafcd544d1fd013f19884c534"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/pose-references/05-arms-crossed.png",
+      "bytes": 688896,
+      "sha256": "8f0984271f3304afac0ce4fb41f7ab924c78e2823ea2e47eb16f1feb283bf507"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/pose-references/06-dual-direction-guide.png",
+      "bytes": 907771,
+      "sha256": "7aeff62b57bed3fd511ccb6b450cf3e5771fcec063642b0098a6840e840b834f"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/pose-references/07-seated-host.png",
+      "bytes": 470376,
+      "sha256": "ffcb7950148db439a0257860fa99e2fd6d00a479ce2f93b26fef2ecc093eb455"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/pose-references/08-diagram-guide.png",
+      "bytes": 274451,
+      "sha256": "00bf294fb789e1b1742c055889f439ae41d7889c73d19eed0d14f8b24484cdd6"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/pose-references/09-team-orchestration.png",
+      "bytes": 471826,
+      "sha256": "fece09fc35c0ea957bacb173f3b4cd9bc1a0c7065d9ed80242d8dd036668cdbc"
+    },
+    {
+      "path": "archive/jacky-cover-before-clear-upper-v7/jacky-cover/assets/pose-references/10-six-pose-overview.png",
+      "bytes": 4817656,
+      "sha256": "76e35e763e7007d7a5a24f5f57cdfdb1dac9ed9cc83447522d79a089862d2227"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/covers/black-gradient-v4.png",
+      "bytes": 8318,
+      "sha256": "4773f00ece5fbb2399a20e69914fab64b28f8dfdd79c634afa974d4bc6b18155"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/covers/masters/paper-blue-paper-master-v3.png",
+      "bytes": 1528823,
+      "sha256": "533cfd9079084f7facc45076049527c897e033a6f5c3eb37dcaea9d739151591"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/covers/paper-blue-interaction-v4.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/jacky-reference-casual.jpg",
+      "bytes": 328789,
+      "sha256": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/jacky-reference-front.jpg",
+      "bytes": 12498631,
+      "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/jacky-reference-gesture.jpg",
+      "bytes": 12341114,
+      "sha256": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/jacky-reference-side.jpg",
+      "bytes": 1432047,
+      "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/pose-references/01-phone-forward.png",
+      "bytes": 713899,
+      "sha256": "a6d19f1e9e9c25dead31692c923e9ec6a92f44f586c77799f07b91721c1d6c9d"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/pose-references/02-laptop-present.png",
+      "bytes": 928963,
+      "sha256": "2ddbb6cdf68b279489b16e852370fc508fc82eba545110404a24bcf2cee9ee08"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/pose-references/03-phone-demo.png",
+      "bytes": 603529,
+      "sha256": "240b8b881a8afdb94d56f2a1b52877158f5e1d07a68779ffa34a96b76e45882e"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/pose-references/04-two-options-compare.png",
+      "bytes": 743181,
+      "sha256": "b144e469133e6bedb2fd8e9befcbe09ad1aed77bafcd544d1fd013f19884c534"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/pose-references/05-arms-crossed.png",
+      "bytes": 688896,
+      "sha256": "8f0984271f3304afac0ce4fb41f7ab924c78e2823ea2e47eb16f1feb283bf507"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/pose-references/06-dual-direction-guide.png",
+      "bytes": 907771,
+      "sha256": "7aeff62b57bed3fd511ccb6b450cf3e5771fcec063642b0098a6840e840b834f"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/pose-references/07-seated-host.png",
+      "bytes": 470376,
+      "sha256": "ffcb7950148db439a0257860fa99e2fd6d00a479ce2f93b26fef2ecc093eb455"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/pose-references/08-diagram-guide.png",
+      "bytes": 274451,
+      "sha256": "00bf294fb789e1b1742c055889f439ae41d7889c73d19eed0d14f8b24484cdd6"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/pose-references/09-team-orchestration.png",
+      "bytes": 471826,
+      "sha256": "fece09fc35c0ea957bacb173f3b4cd9bc1a0c7065d9ed80242d8dd036668cdbc"
+    },
+    {
+      "path": "archive/jacky-cover-before-original-only-v5/jacky-cover/assets/pose-references/10-six-pose-overview.png",
+      "bytes": 4817656,
+      "sha256": "76e35e763e7007d7a5a24f5f57cdfdb1dac9ed9cc83447522d79a089862d2227"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/covers/black-gradient-v4.png",
+      "bytes": 8318,
+      "sha256": "4773f00ece5fbb2399a20e69914fab64b28f8dfdd79c634afa974d4bc6b18155"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/covers/masters/paper-blue-paper-master-v3.png",
+      "bytes": 1528823,
+      "sha256": "533cfd9079084f7facc45076049527c897e033a6f5c3eb37dcaea9d739151591"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/covers/paper-blue-interaction-v4.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/jacky-reference-casual.jpg",
+      "bytes": 328789,
+      "sha256": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/jacky-reference-front.jpg",
+      "bytes": 12498631,
+      "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/jacky-reference-gesture.jpg",
+      "bytes": 12341114,
+      "sha256": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/jacky-reference-side.jpg",
+      "bytes": 1432047,
+      "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/pose-references/01-phone-forward.png",
+      "bytes": 713899,
+      "sha256": "a6d19f1e9e9c25dead31692c923e9ec6a92f44f586c77799f07b91721c1d6c9d"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/pose-references/02-laptop-present.png",
+      "bytes": 928963,
+      "sha256": "2ddbb6cdf68b279489b16e852370fc508fc82eba545110404a24bcf2cee9ee08"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/pose-references/03-phone-demo.png",
+      "bytes": 603529,
+      "sha256": "240b8b881a8afdb94d56f2a1b52877158f5e1d07a68779ffa34a96b76e45882e"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/pose-references/04-two-options-compare.png",
+      "bytes": 743181,
+      "sha256": "b144e469133e6bedb2fd8e9befcbe09ad1aed77bafcd544d1fd013f19884c534"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/pose-references/05-arms-crossed.png",
+      "bytes": 688896,
+      "sha256": "8f0984271f3304afac0ce4fb41f7ab924c78e2823ea2e47eb16f1feb283bf507"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/pose-references/06-dual-direction-guide.png",
+      "bytes": 907771,
+      "sha256": "7aeff62b57bed3fd511ccb6b450cf3e5771fcec063642b0098a6840e840b834f"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/pose-references/07-seated-host.png",
+      "bytes": 470376,
+      "sha256": "ffcb7950148db439a0257860fa99e2fd6d00a479ce2f93b26fef2ecc093eb455"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/pose-references/08-diagram-guide.png",
+      "bytes": 274451,
+      "sha256": "00bf294fb789e1b1742c055889f439ae41d7889c73d19eed0d14f8b24484cdd6"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/pose-references/09-team-orchestration.png",
+      "bytes": 471826,
+      "sha256": "fece09fc35c0ea957bacb173f3b4cd9bc1a0c7065d9ed80242d8dd036668cdbc"
+    },
+    {
+      "path": "archive/jacky-cover-before-title-third-v6/jacky-cover/assets/pose-references/10-six-pose-overview.png",
+      "bytes": 4817656,
+      "sha256": "76e35e763e7007d7a5a24f5f57cdfdb1dac9ed9cc83447522d79a089862d2227"
+    },
+    {
+      "path": "archive/jacky-cover-legacy-before-template-v1/jacky-cover/assets/jacky-reference-casual.jpg",
+      "bytes": 328789,
+      "sha256": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08"
+    },
+    {
+      "path": "archive/jacky-cover-legacy-before-template-v1/jacky-cover/assets/jacky-reference-front.jpg",
+      "bytes": 12498631,
+      "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+    },
+    {
+      "path": "archive/jacky-cover-legacy-before-template-v1/jacky-cover/assets/jacky-reference-gesture.jpg",
+      "bytes": 12341114,
+      "sha256": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f"
+    },
+    {
+      "path": "archive/jacky-cover-legacy-before-template-v1/jacky-cover/assets/jacky-reference-side.jpg",
+      "bytes": 1432047,
+      "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+    },
+    {
+      "path": "archive/jacky-cover-template-v1-before-paper-fix/jacky-cover/assets/covers/black-gradient-v1.png",
+      "bytes": 9776,
+      "sha256": "4001ed28e361b73982657c2d2ef2f8acf96af9fe45c47ec90c4d062167493bb1"
+    },
+    {
+      "path": "archive/jacky-cover-template-v1-before-paper-fix/jacky-cover/assets/covers/paper-blue-interaction-v1.png",
+      "bytes": 967710,
+      "sha256": "4ad08141787823641c31b170a95a29778f850c520b2720d4de995385394360fe"
+    },
+    {
+      "path": "archive/jacky-cover-template-v1-before-paper-fix/jacky-cover/assets/jacky-reference-casual.jpg",
+      "bytes": 328789,
+      "sha256": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08"
+    },
+    {
+      "path": "archive/jacky-cover-template-v1-before-paper-fix/jacky-cover/assets/jacky-reference-front.jpg",
+      "bytes": 12498631,
+      "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+    },
+    {
+      "path": "archive/jacky-cover-template-v1-before-paper-fix/jacky-cover/assets/jacky-reference-gesture.jpg",
+      "bytes": 12341114,
+      "sha256": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f"
+    },
+    {
+      "path": "archive/jacky-cover-template-v1-before-paper-fix/jacky-cover/assets/jacky-reference-side.jpg",
+      "bytes": 1432047,
+      "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+    },
+    {
+      "path": "archive/jacky-cover-template-v2-before-reference-plate/jacky-cover/assets/covers/black-gradient-v2.png",
+      "bytes": 9857,
+      "sha256": "a151a92f42614eafacf99c342e198d63b69acdfa5eb142ff0a88ea20c680e4dc"
+    },
+    {
+      "path": "archive/jacky-cover-template-v2-before-reference-plate/jacky-cover/assets/covers/paper-blue-interaction-v2.png",
+      "bytes": 750444,
+      "sha256": "b71a6ba1b8df5761cbe583845e88571e7e2a3e418146f0dc596bcffb892a0dd1"
+    },
+    {
+      "path": "archive/jacky-cover-template-v2-before-reference-plate/jacky-cover/assets/jacky-reference-casual.jpg",
+      "bytes": 328789,
+      "sha256": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08"
+    },
+    {
+      "path": "archive/jacky-cover-template-v2-before-reference-plate/jacky-cover/assets/jacky-reference-front.jpg",
+      "bytes": 12498631,
+      "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+    },
+    {
+      "path": "archive/jacky-cover-template-v2-before-reference-plate/jacky-cover/assets/jacky-reference-gesture.jpg",
+      "bytes": 12341114,
+      "sha256": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f"
+    },
+    {
+      "path": "archive/jacky-cover-template-v2-before-reference-plate/jacky-cover/assets/jacky-reference-side.jpg",
+      "bytes": 1432047,
+      "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+    },
+    {
+      "path": "archive/jacky-cover-template-v3-before-pose-library/jacky-cover/assets/covers/black-gradient-v3.png",
+      "bytes": 8172,
+      "sha256": "c5095ea6bf64bfff945ff1f7cbfd6b5835501c502a5108feba1e4582b3e85b34"
+    },
+    {
+      "path": "archive/jacky-cover-template-v3-before-pose-library/jacky-cover/assets/covers/paper-blue-interaction-v3.png",
+      "bytes": 1528823,
+      "sha256": "533cfd9079084f7facc45076049527c897e033a6f5c3eb37dcaea9d739151591"
+    },
+    {
+      "path": "archive/jacky-cover-template-v3-before-pose-library/jacky-cover/assets/jacky-reference-casual.jpg",
+      "bytes": 328789,
+      "sha256": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08"
+    },
+    {
+      "path": "archive/jacky-cover-template-v3-before-pose-library/jacky-cover/assets/jacky-reference-front.jpg",
+      "bytes": 12498631,
+      "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+    },
+    {
+      "path": "archive/jacky-cover-template-v3-before-pose-library/jacky-cover/assets/jacky-reference-gesture.jpg",
+      "bytes": 12341114,
+      "sha256": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f"
+    },
+    {
+      "path": "archive/jacky-cover-template-v3-before-pose-library/jacky-cover/assets/jacky-reference-side.jpg",
+      "bytes": 1432047,
+      "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+    },
+    {
+      "path": "experiments/opus55/工作区/foreground.png",
+      "bytes": 1852917,
+      "sha256": "801525726ecbd13ea01ce10c9c79909b21f9179f4d36fde6792632a0dfdc8321"
+    },
+    {
+      "path": "experiments/opus55/工作区/v2姿势与行距/foreground.png",
+      "bytes": 1736470,
+      "sha256": "ca9b4ace8c31220afc6713fc4aae03cccdb9b4217d2be8dbfbcd1d6586e97fb3"
+    },
+    {
+      "path": "experiments/opus55/工作区/v2姿势与行距/template/assets/covers/black-gradient-v7.png",
+      "bytes": 8060,
+      "sha256": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4"
+    },
+    {
+      "path": "experiments/opus55/工作区/v2姿势与行距/template/assets/covers/paper-blue-interaction-v4.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/opus55/工作区/v3交接隐喻/font-samples.png",
+      "bytes": 55720,
+      "sha256": "791de81f7b38051adf315f7f0f9061d2fff0bfdb1404c1b36e26d1ab90d0eada"
+    },
+    {
+      "path": "experiments/opus55/工作区/v3交接隐喻/foreground.png",
+      "bytes": 1479907,
+      "sha256": "7721a139cebc2934c238b49f684fb2d8aae74a7963079df75b1abd080b45ba22"
+    },
+    {
+      "path": "experiments/opus55/工作区/v3交接隐喻/template/assets/covers/black-gradient-v7.png",
+      "bytes": 8060,
+      "sha256": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4"
+    },
+    {
+      "path": "experiments/opus55/工作区/v3交接隐喻/template/assets/covers/paper-blue-interaction-v4.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/opus55/工作区/v4导演构图测试/foreground-corrected.png",
+      "bytes": 1550337,
+      "sha256": "ee1b8aba136a36c87b4f9c6cac03073c8b1c766c24c35e51355c6b4879458405"
+    },
+    {
+      "path": "experiments/opus55/工作区/v4导演构图测试/foreground.png",
+      "bytes": 2119162,
+      "sha256": "2650d52710556b8bac921fd5eb04d3c370ddc94b878079d014518ee71d9d3039"
+    },
+    {
+      "path": "experiments/opus55/工作区/v4导演构图测试/template/assets/covers/black-gradient-v7.png",
+      "bytes": 8060,
+      "sha256": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4"
+    },
+    {
+      "path": "experiments/opus55/工作区/v4导演构图测试/template/assets/covers/paper-blue-interaction-v4.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/opus55/工作区/v5动作约束修复/foreground.png",
+      "bytes": 1216138,
+      "sha256": "ac8d17111ce3b559a584b24c736d93733c0e506a7bb21c58f2c3ecb29f32db93"
+    },
+    {
+      "path": "experiments/opus55/工作区/v5动作约束修复/template/assets/covers/black-gradient-v7.png",
+      "bytes": 8060,
+      "sha256": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4"
+    },
+    {
+      "path": "experiments/opus55/工作区/v5动作约束修复/template/assets/covers/paper-blue-interaction-v4.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/opus55/输入资料/副标题字形参考.jpg",
+      "bytes": 195381,
+      "sha256": "fa45f7cbadda1249c2f3181c0e8f26ddae1ac014227ae9497587617d73c3a191"
+    },
+    {
+      "path": "experiments/opus55/输入资料/用户选题截图.jpg",
+      "bytes": 175870,
+      "sha256": "41c3f8e9613f64358e631800b6715680e991561406e9ca82b4c62ae31fe13ba2"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v1/layers/background.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v1/layers/black-mask.png",
+      "bytes": 8060,
+      "sha256": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v1/layers/foreground.png",
+      "bytes": 1214887,
+      "sha256": "b803629923447e8e682f120e168cd8db40687fc691384590efb1b4864b5517b2"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v1/layers/pre-mask.png",
+      "bytes": 2163117,
+      "sha256": "559a1c0d3d9de6c61933709abe8ed03e916bb43eb069a21c38f41aa1eadc5e60"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v1/layers/text.png",
+      "bytes": 38273,
+      "sha256": "0d5790940ac56f931844c34acc06fcb753c8d434282f2bbdf817562a6cb3f7fa"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v1/layers/thumbnail.png",
+      "bytes": 123172,
+      "sha256": "1040694c30b7ac057d93fbb9a53a1fedcbdb253703fc9c416c49bbfdabbc0437"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v1/告别写报告-Opus55接管比赛.png",
+      "bytes": 1566566,
+      "sha256": "42e04403031ff96337ac1874770b9b7065e45862da6d67685c298b58f2fd7e3f"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v2/layers/background.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v2/layers/black-mask.png",
+      "bytes": 8060,
+      "sha256": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v2/layers/foreground.png",
+      "bytes": 1120223,
+      "sha256": "04b120eee7898acbaa1db6819065a25fb7308fa0a3b2bfdf936b61d74dd70a55"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v2/layers/pre-mask.png",
+      "bytes": 2085544,
+      "sha256": "8dd7f755b34025fc65c40b63de730dd119325d5ad6980d56eb599ba123e0c0b4"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v2/layers/text.png",
+      "bytes": 38407,
+      "sha256": "057d659dcfeb6a4d21de3bb5b584be728ba7a7220264a6f8b975d6ccd612c0f4"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v2/layers/thumbnail.png",
+      "bytes": 117188,
+      "sha256": "b232c76e778c05a1c7dc6dc9cce25bab648469c1296546dc16c4c64aef390785"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v2/告别写报告-Opus55接管比赛.png",
+      "bytes": 1503482,
+      "sha256": "2efabd9f37741d235d0aea34661f4619c0aa152fb7e9e00401dd889b648f1226"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v3/layers/background.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v3/layers/black-mask.png",
+      "bytes": 8060,
+      "sha256": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v3/layers/foreground.png",
+      "bytes": 970889,
+      "sha256": "9879b90b39180105683cf75c5a1004a0528ddd00b609318df481cff1ed26f091"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v3/layers/pre-mask.png",
+      "bytes": 2046506,
+      "sha256": "9f0959237a9fac8fe65b9c4d9e055cf46fe96b97ceab88993bea6c1036cab5e0"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v3/layers/text.png",
+      "bytes": 38705,
+      "sha256": "14313ad95422dec0d1e1d01217c95874ab364114ede8db06503ba704f43a9651"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v3/layers/thumbnail.png",
+      "bytes": 113241,
+      "sha256": "53aaa1255aacd6fe0ab829eaa71d0b87efbe24ae88427523f9ded068fea5bae6"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v3/告别写报告-Opus55接管比赛.png",
+      "bytes": 1470432,
+      "sha256": "fd5d5832880752f2b3ac2eae5d320417b21367eacf5ab656e3e8fc66c706f4c5"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v4/layers/background.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v4/layers/black-mask.png",
+      "bytes": 8060,
+      "sha256": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v4/layers/foreground.png",
+      "bytes": 1399715,
+      "sha256": "3040cc38d75c9efa6c48d85f46b7ab68bcf97c779c74b2770bbec658cbcc72d4"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v4/layers/pre-mask.png",
+      "bytes": 2315439,
+      "sha256": "91d3b6c7d1ce79a6eb23c37a6fab8ca5d1df7a0d6cc271c09f765b68f25537bc"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v4/layers/text.png",
+      "bytes": 38705,
+      "sha256": "14313ad95422dec0d1e1d01217c95874ab364114ede8db06503ba704f43a9651"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v4/layers/thumbnail.png",
+      "bytes": 128769,
+      "sha256": "f9f04df4c86936f83a0fcb820109cf8861bd3becaa84e2f3f113b9f2c34898f7"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v4/告别写报告-Opus55接管比赛.png",
+      "bytes": 1659376,
+      "sha256": "630979ab8055623b8059eadb8b0c4df2742fba15c8b6bf7f91fd3c452b648dcc"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v4修正版/layers/background.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v4修正版/layers/black-mask.png",
+      "bytes": 8060,
+      "sha256": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v4修正版/layers/foreground.png",
+      "bytes": 964325,
+      "sha256": "a7e722e1826af7e73c8bedc0ef575aed69965bc623273b6fa19c9a583889785e"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v4修正版/layers/pre-mask.png",
+      "bytes": 2007092,
+      "sha256": "12d8baee55b5aeaf42d2bada091f94836afe00de10cb9bcb923e83a6f1d08f80"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v4修正版/layers/text.png",
+      "bytes": 38705,
+      "sha256": "14313ad95422dec0d1e1d01217c95874ab364114ede8db06503ba704f43a9651"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v4修正版/layers/thumbnail.png",
+      "bytes": 116708,
+      "sha256": "1684c2bc8777ec85d96c56a9241cf31dcfd5b071c018efacd72bac1990c0f1c3"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v4修正版/告别写报告-Opus55接管比赛.png",
+      "bytes": 1452395,
+      "sha256": "dc9c267503807215fb3be7859447091c879c74486cc5a0c0b67444472e842a6b"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v5/layers/background.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v5/layers/black-mask.png",
+      "bytes": 8060,
+      "sha256": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v5/layers/foreground.png",
+      "bytes": 750304,
+      "sha256": "487cae40e9fa45caeade7d7bd5e09cc7625ece088f1bcf4d5f9473e6db39cac9"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v5/layers/pre-mask.png",
+      "bytes": 1883859,
+      "sha256": "c6a94bda7365d6cd8f5f42cbdd0fca81bb0de949054a1ae8ac4826f49bd41d0b"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v5/layers/text.png",
+      "bytes": 38705,
+      "sha256": "14313ad95422dec0d1e1d01217c95874ab364114ede8db06503ba704f43a9651"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v5/layers/thumbnail.png",
+      "bytes": 107261,
+      "sha256": "0f9dfd5a27faf2c9bbc36f09b91ee77f109344eddfacc8d8c0112287a37f2143"
+    },
+    {
+      "path": "experiments/opus55/输出版本/v5/告别写报告-Opus55接管比赛.png",
+      "bytes": 1346922,
+      "sha256": "98d5a3afd68854ad55e843cc2bd6dcf9d1d5961852653a56b34c2039cf3714f2"
+    },
+    {
+      "path": "experiments/paper-blue/output/v3-信息流.png",
+      "bytes": 135147,
+      "sha256": "011fc9fcd5347fd621532a3d8bac85299851609ce069c577e413a2606a64c519"
+    },
+    {
+      "path": "experiments/paper-blue/output/v3-副标与人物边缘.png",
+      "bytes": 485922,
+      "sha256": "6d10d2dc08f04953bfffee228623d309f7fc423e617ffa60307eeeec0aa17355"
+    },
+    {
+      "path": "experiments/paper-blue/output/v4-人物边缘.png",
+      "bytes": 414694,
+      "sha256": "115758199c6798e0bcaf8faa44a4f10ffbc95509034494697cdf226e3d9fc930"
+    },
+    {
+      "path": "experiments/paper-blue/output/v4-信息流.png",
+      "bytes": 130901,
+      "sha256": "f6dc318c2177e5ab819260a1dfe5f31bcd0a060091824c331dd77e3d45325f87"
+    },
+    {
+      "path": "experiments/paper-blue/output/v4-手写补充.png",
+      "bytes": 107845,
+      "sha256": "a836285f9ab0ce3d200b9064bf299ed4886489a9c09cc92292e351af7bfa8c38"
+    },
+    {
+      "path": "experiments/paper-blue/output/v5-信息流.png",
+      "bytes": 152709,
+      "sha256": "ef61d097cda2fd057fc232a34fedf0b590ff284dc6776ae4d092ed8797ac469b"
+    },
+    {
+      "path": "experiments/paper-blue/output/v5-原照-v4-v5-人脸对照.png",
+      "bytes": 800565,
+      "sha256": "df41ae2a0836f8ae2a9668dbd7a35d53e9f30c6ce259e149872cdd3eced5dbce"
+    },
+    {
+      "path": "experiments/paper-blue/output/v6-信息流.png",
+      "bytes": 127981,
+      "sha256": "6e370e59face61db23f195b3320fc487664052b60f4fe0420e84e237a864a5e6"
+    },
+    {
+      "path": "experiments/paper-blue/output/v6-脸型与肩部.png",
+      "bytes": 508329,
+      "sha256": "08f01a3c2d700a8528f518899cbe1478c04a6232fa3f552e93d8529e1ca80d8b"
+    },
+    {
+      "path": "experiments/paper-blue/output/人物局部.png",
+      "bytes": 335760,
+      "sha256": "b4412531dd174d30b4e72d10fbe61949b4d21591175071c8114ef388033fed25"
+    },
+    {
+      "path": "experiments/paper-blue/output/信息流-270x360.png",
+      "bytes": 142990,
+      "sha256": "74e2718ef2992df1b5c39ac6a111763f45cc14b9079e65316fd7385102ea5820"
+    },
+    {
+      "path": "experiments/paper-blue/output/手势局部.png",
+      "bytes": 211286,
+      "sha256": "8d5c573a51ab052b4ee460c94f06107187d2b25bbc2c4789ab652f3519a6f55a"
+    },
+    {
+      "path": "experiments/paper-blue/output/纸蓝v2-人物.png",
+      "bytes": 320151,
+      "sha256": "d005b47fe171e582e42134d283de21d0dac4634d641f745fdac873e0c5b4d262"
+    },
+    {
+      "path": "experiments/paper-blue/output/纸蓝v2-信息流.png",
+      "bytes": 136015,
+      "sha256": "7c0a70e447538443e564ef0b03889ae2098dfe3e5e9665a36fbf13a1a3655909"
+    },
+    {
+      "path": "experiments/paper-blue/output/纸蓝v2-手.png",
+      "bytes": 162037,
+      "sha256": "6b8283c1cbab5f93aa9c7828d5fa9fbd5d14a8a767b9996107c6e709397ab472"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/v6/base.png",
+      "bytes": 1994844,
+      "sha256": "1f2f35dd42f15cd6ebd3ab374239d55606fb2c0b1d631f44886f67bbbe81791b"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/v6/title-layer.png",
+      "bytes": 31638,
+      "sha256": "c329a78c1c535bac262cce964792c31785f823a279f43febda5b0a7fd00d8dee"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/covers/black-gradient-v4.png",
+      "bytes": 8318,
+      "sha256": "4773f00ece5fbb2399a20e69914fab64b28f8dfdd79c634afa974d4bc6b18155"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/covers/masters/paper-blue-paper-master-v3.png",
+      "bytes": 1528823,
+      "sha256": "533cfd9079084f7facc45076049527c897e033a6f5c3eb37dcaea9d739151591"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/covers/paper-blue-interaction-v4.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/jacky-reference-casual.jpg",
+      "bytes": 328789,
+      "sha256": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/jacky-reference-front.jpg",
+      "bytes": 12498631,
+      "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/jacky-reference-gesture.jpg",
+      "bytes": 12341114,
+      "sha256": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/jacky-reference-side.jpg",
+      "bytes": 1432047,
+      "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/pose-references/01-phone-forward.png",
+      "bytes": 713899,
+      "sha256": "a6d19f1e9e9c25dead31692c923e9ec6a92f44f586c77799f07b91721c1d6c9d"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/pose-references/02-laptop-present.png",
+      "bytes": 928963,
+      "sha256": "2ddbb6cdf68b279489b16e852370fc508fc82eba545110404a24bcf2cee9ee08"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/pose-references/03-phone-demo.png",
+      "bytes": 603529,
+      "sha256": "240b8b881a8afdb94d56f2a1b52877158f5e1d07a68779ffa34a96b76e45882e"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/pose-references/04-two-options-compare.png",
+      "bytes": 743181,
+      "sha256": "b144e469133e6bedb2fd8e9befcbe09ad1aed77bafcd544d1fd013f19884c534"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/pose-references/05-arms-crossed.png",
+      "bytes": 688896,
+      "sha256": "8f0984271f3304afac0ce4fb41f7ab924c78e2823ea2e47eb16f1feb283bf507"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/pose-references/06-dual-direction-guide.png",
+      "bytes": 907771,
+      "sha256": "7aeff62b57bed3fd511ccb6b450cf3e5771fcec063642b0098a6840e840b834f"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/pose-references/07-seated-host.png",
+      "bytes": 470376,
+      "sha256": "ffcb7950148db439a0257860fa99e2fd6d00a479ce2f93b26fef2ecc093eb455"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/pose-references/08-diagram-guide.png",
+      "bytes": 274451,
+      "sha256": "00bf294fb789e1b1742c055889f439ae41d7889c73d19eed0d14f8b24484cdd6"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/pose-references/09-team-orchestration.png",
+      "bytes": 471826,
+      "sha256": "fece09fc35c0ea957bacb173f3b4cd9bc1a0c7065d9ed80242d8dd036668cdbc"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/动作库与自然渐变v4/skill/assets/pose-references/10-six-pose-overview.png",
+      "bytes": 4817656,
+      "sha256": "76e35e763e7007d7a5a24f5f57cdfdb1dac9ed9cc83447522d79a089862d2227"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/参考底图修订v3/background-generated-original.png",
+      "bytes": 1621153,
+      "sha256": "9e1a3158b93c363aec65b127846d4dff6cd2966deec57a9fd9790c4df3b05e8d"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/参考底图修订v3/skill/assets/covers/black-gradient-v3.png",
+      "bytes": 8172,
+      "sha256": "c5095ea6bf64bfff945ff1f7cbfd6b5835501c502a5108feba1e4582b3e85b34"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/参考底图修订v3/skill/assets/covers/paper-blue-interaction-v3.png",
+      "bytes": 1528823,
+      "sha256": "533cfd9079084f7facc45076049527c897e033a6f5c3eb37dcaea9d739151591"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/参考底图修订v3/skill/assets/jacky-reference-casual.jpg",
+      "bytes": 328789,
+      "sha256": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/参考底图修订v3/skill/assets/jacky-reference-front.jpg",
+      "bytes": 12498631,
+      "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/参考底图修订v3/skill/assets/jacky-reference-gesture.jpg",
+      "bytes": 12341114,
+      "sha256": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/参考底图修订v3/skill/assets/jacky-reference-side.jpg",
+      "bytes": 1432047,
+      "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧最强实力测试/foreground-bot-army.png",
+      "bytes": 1510567,
+      "sha256": "fcfd5262d8e1dd75470f56fb0b32082e36bda3b896f3046651ba0cbee3ee7778"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧最强实力测试/foreground.png",
+      "bytes": 1573560,
+      "sha256": "7bf09e11f98753a7a96f489ba80590ae69777d90d6f144b3d9af1314e9e5bd33"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧最强实力测试/用户右侧文案参考.png",
+      "bytes": 1471305,
+      "sha256": "11a80de6a8078fcb4f210ebb87ebd879aa286aaa451b1e31acec9569e4156a10"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧最强实力测试/用户指定Bot军团形象.png",
+      "bytes": 47336,
+      "sha256": "705dd5c8cf162eb4d7a186bc33c0e25c55585ed759a57c61ef0ae7272a55d7d1"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/covers/black-gradient-v4.png",
+      "bytes": 8318,
+      "sha256": "4773f00ece5fbb2399a20e69914fab64b28f8dfdd79c634afa974d4bc6b18155"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/covers/masters/paper-blue-paper-master-v3.png",
+      "bytes": 1528823,
+      "sha256": "533cfd9079084f7facc45076049527c897e033a6f5c3eb37dcaea9d739151591"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/covers/paper-blue-interaction-v4.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/jacky-reference-casual.jpg",
+      "bytes": 328789,
+      "sha256": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/jacky-reference-front.jpg",
+      "bytes": 12498631,
+      "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/jacky-reference-gesture.jpg",
+      "bytes": 12341114,
+      "sha256": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/jacky-reference-side.jpg",
+      "bytes": 1432047,
+      "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/pose-references/01-phone-forward.png",
+      "bytes": 713899,
+      "sha256": "a6d19f1e9e9c25dead31692c923e9ec6a92f44f586c77799f07b91721c1d6c9d"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/pose-references/02-laptop-present.png",
+      "bytes": 928963,
+      "sha256": "2ddbb6cdf68b279489b16e852370fc508fc82eba545110404a24bcf2cee9ee08"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/pose-references/03-phone-demo.png",
+      "bytes": 603529,
+      "sha256": "240b8b881a8afdb94d56f2a1b52877158f5e1d07a68779ffa34a96b76e45882e"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/pose-references/04-two-options-compare.png",
+      "bytes": 743181,
+      "sha256": "b144e469133e6bedb2fd8e9befcbe09ad1aed77bafcd544d1fd013f19884c534"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/pose-references/05-arms-crossed.png",
+      "bytes": 688896,
+      "sha256": "8f0984271f3304afac0ce4fb41f7ab924c78e2823ea2e47eb16f1feb283bf507"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/pose-references/06-dual-direction-guide.png",
+      "bytes": 907771,
+      "sha256": "7aeff62b57bed3fd511ccb6b450cf3e5771fcec063642b0098a6840e840b834f"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/pose-references/07-seated-host.png",
+      "bytes": 470376,
+      "sha256": "ffcb7950148db439a0257860fa99e2fd6d00a479ce2f93b26fef2ecc093eb455"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/pose-references/08-diagram-guide.png",
+      "bytes": 274451,
+      "sha256": "00bf294fb789e1b1742c055889f439ae41d7889c73d19eed0d14f8b24484cdd6"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/pose-references/09-team-orchestration.png",
+      "bytes": 471826,
+      "sha256": "fece09fc35c0ea957bacb173f3b4cd9bc1a0c7065d9ed80242d8dd036668cdbc"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题下三分之一/skill/assets/pose-references/10-six-pose-overview.png",
+      "bytes": 4817656,
+      "sha256": "76e35e763e7007d7a5a24f5f57cdfdb1dac9ed9cc83447522d79a089862d2227"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/covers/black-gradient-v7.png",
+      "bytes": 8060,
+      "sha256": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/covers/masters/paper-blue-paper-master-v3.png",
+      "bytes": 1528823,
+      "sha256": "533cfd9079084f7facc45076049527c897e033a6f5c3eb37dcaea9d739151591"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/covers/paper-blue-interaction-v4.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/jacky-reference-casual.jpg",
+      "bytes": 328789,
+      "sha256": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/jacky-reference-front.jpg",
+      "bytes": 12498631,
+      "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/jacky-reference-gesture.jpg",
+      "bytes": 12341114,
+      "sha256": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/jacky-reference-side.jpg",
+      "bytes": 1432047,
+      "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/pose-references/01-phone-forward.png",
+      "bytes": 713899,
+      "sha256": "a6d19f1e9e9c25dead31692c923e9ec6a92f44f586c77799f07b91721c1d6c9d"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/pose-references/02-laptop-present.png",
+      "bytes": 928963,
+      "sha256": "2ddbb6cdf68b279489b16e852370fc508fc82eba545110404a24bcf2cee9ee08"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/pose-references/03-phone-demo.png",
+      "bytes": 603529,
+      "sha256": "240b8b881a8afdb94d56f2a1b52877158f5e1d07a68779ffa34a96b76e45882e"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/pose-references/04-two-options-compare.png",
+      "bytes": 743181,
+      "sha256": "b144e469133e6bedb2fd8e9befcbe09ad1aed77bafcd544d1fd013f19884c534"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/pose-references/05-arms-crossed.png",
+      "bytes": 688896,
+      "sha256": "8f0984271f3304afac0ce4fb41f7ab924c78e2823ea2e47eb16f1feb283bf507"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/pose-references/06-dual-direction-guide.png",
+      "bytes": 907771,
+      "sha256": "7aeff62b57bed3fd511ccb6b450cf3e5771fcec063642b0098a6840e840b834f"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/pose-references/07-seated-host.png",
+      "bytes": 470376,
+      "sha256": "ffcb7950148db439a0257860fa99e2fd6d00a479ce2f93b26fef2ecc093eb455"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/pose-references/08-diagram-guide.png",
+      "bytes": 274451,
+      "sha256": "00bf294fb789e1b1742c055889f439ae41d7889c73d19eed0d14f8b24484cdd6"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/pose-references/09-team-orchestration.png",
+      "bytes": 471826,
+      "sha256": "fece09fc35c0ea957bacb173f3b4cd9bc1a0c7065d9ed80242d8dd036668cdbc"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧标题收紧与上部提亮/skill/assets/pose-references/10-six-pose-overview.png",
+      "bytes": 4817656,
+      "sha256": "76e35e763e7007d7a5a24f5f57cdfdb1dac9ed9cc83447522d79a089862d2227"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/foreground-fresh.png",
+      "bytes": 1517393,
+      "sha256": "439cc1580da880a890c18604a461681fbccdc77883738a479b4ede15e638aea5"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/covers/black-gradient-v4.png",
+      "bytes": 8318,
+      "sha256": "4773f00ece5fbb2399a20e69914fab64b28f8dfdd79c634afa974d4bc6b18155"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/covers/masters/paper-blue-paper-master-v3.png",
+      "bytes": 1528823,
+      "sha256": "533cfd9079084f7facc45076049527c897e033a6f5c3eb37dcaea9d739151591"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/covers/paper-blue-interaction-v4.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/jacky-reference-casual.jpg",
+      "bytes": 328789,
+      "sha256": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/jacky-reference-front.jpg",
+      "bytes": 12498631,
+      "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/jacky-reference-gesture.jpg",
+      "bytes": 12341114,
+      "sha256": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/jacky-reference-side.jpg",
+      "bytes": 1432047,
+      "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/pose-references/01-phone-forward.png",
+      "bytes": 713899,
+      "sha256": "a6d19f1e9e9c25dead31692c923e9ec6a92f44f586c77799f07b91721c1d6c9d"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/pose-references/02-laptop-present.png",
+      "bytes": 928963,
+      "sha256": "2ddbb6cdf68b279489b16e852370fc508fc82eba545110404a24bcf2cee9ee08"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/pose-references/03-phone-demo.png",
+      "bytes": 603529,
+      "sha256": "240b8b881a8afdb94d56f2a1b52877158f5e1d07a68779ffa34a96b76e45882e"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/pose-references/04-two-options-compare.png",
+      "bytes": 743181,
+      "sha256": "b144e469133e6bedb2fd8e9befcbe09ad1aed77bafcd544d1fd013f19884c534"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/pose-references/05-arms-crossed.png",
+      "bytes": 688896,
+      "sha256": "8f0984271f3304afac0ce4fb41f7ab924c78e2823ea2e47eb16f1feb283bf507"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/pose-references/06-dual-direction-guide.png",
+      "bytes": 907771,
+      "sha256": "7aeff62b57bed3fd511ccb6b450cf3e5771fcec063642b0098a6840e840b834f"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/pose-references/07-seated-host.png",
+      "bytes": 470376,
+      "sha256": "ffcb7950148db439a0257860fa99e2fd6d00a479ce2f93b26fef2ecc093eb455"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/pose-references/08-diagram-guide.png",
+      "bytes": 274451,
+      "sha256": "00bf294fb789e1b1742c055889f439ae41d7889c73d19eed0d14f8b24484cdd6"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/pose-references/09-team-orchestration.png",
+      "bytes": 471826,
+      "sha256": "fece09fc35c0ea957bacb173f3b4cd9bc1a0c7065d9ed80242d8dd036668cdbc"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/右侧重新原照生成/skill/assets/pose-references/10-six-pose-overview.png",
+      "bytes": 4817656,
+      "sha256": "76e35e763e7007d7a5a24f5f57cdfdb1dac9ed9cc83447522d79a089862d2227"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/新版实施/skill/assets/covers/black-gradient-v1.png",
+      "bytes": 9776,
+      "sha256": "4001ed28e361b73982657c2d2ef2f8acf96af9fe45c47ec90c4d062167493bb1"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/新版实施/skill/assets/covers/paper-blue-interaction-v1.png",
+      "bytes": 967710,
+      "sha256": "4ad08141787823641c31b170a95a29778f850c520b2720d4de995385394360fe"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/未采用-v1/JackyCover-紫蓝剪纸互动-3x4-v1.png",
+      "bytes": 2291144,
+      "sha256": "4a2ff256c3309dfb9c8be5b2abd7f99ece059458347900994dd8f32791d1c9ef"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/模板v1试运行/foreground.png",
+      "bytes": 1535589,
+      "sha256": "0674b820effa5b05ec68f2eaeb6bdc6d48ec29524eb48002d4d0b46994827c18"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/模板v1试运行/placed-inspection.png",
+      "bytes": 956402,
+      "sha256": "3bf5d66c4c3bfce64369993628d25bc9f308477dd28fc9cccc91c873cc6df55e"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/纸底修订v2/skill/assets/covers/black-gradient-v2.png",
+      "bytes": 9857,
+      "sha256": "a151a92f42614eafacf99c342e198d63b69acdfa5eb142ff0a88ea20c680e4dc"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/纸底修订v2/skill/assets/covers/paper-blue-interaction-v2.png",
+      "bytes": 750444,
+      "sha256": "b71a6ba1b8df5761cbe583845e88571e7e2a3e418146f0dc596bcffb892a0dd1"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/纸底修订v2/skill/assets/jacky-reference-casual.jpg",
+      "bytes": 328789,
+      "sha256": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/纸底修订v2/skill/assets/jacky-reference-front.jpg",
+      "bytes": 12498631,
+      "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/纸底修订v2/skill/assets/jacky-reference-gesture.jpg",
+      "bytes": 12341114,
+      "sha256": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f"
+    },
+    {
+      "path": "experiments/paper-blue/工作区/纸底修订v2/skill/assets/jacky-reference-side.jpg",
+      "bytes": 1432047,
+      "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+    },
+    {
+      "path": "experiments/paper-blue/输入资料/用户指定风格基准-v3外观.png",
+      "bytes": 2047969,
+      "sha256": "4a67dc8cd64d698669481ae684c7d907c09c9a45bed44755fdcd360849ef3e5f"
+    },
+    {
+      "path": "experiments/paper-blue/输入资料/用户本轮指定底图-v3.png",
+      "bytes": 1339664,
+      "sha256": "a86c78e66c2f5867e97be98f1c4df48ea6c19f50b639776d457616aaf24afd5e"
+    },
+    {
+      "path": "experiments/paper-blue/输入资料/用户构图参考.png",
+      "bytes": 1339664,
+      "sha256": "a86c78e66c2f5867e97be98f1c4df48ea6c19f50b639776d457616aaf24afd5e"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/JackyCover-原照重建-v5-待确认.png",
+      "bytes": 2245777,
+      "sha256": "43fe6d687e5cda303abad55ceb7ea67177ba023f66e7306c6568433cd1ab6ac2"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/JackyCover-清爽纸蓝-普惠体-3x4-v6.png",
+      "bytes": 1776117,
+      "sha256": "b7261c7c6b3d91b754ac037261b006a64d853c77395aa9dec37b06e9cd69b852"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/JackyCover-纸蓝剪纸互动-3x4-v2.png",
+      "bytes": 2066323,
+      "sha256": "274768fa2982049e19116cb99c772eb0c2549ab9e364c2cecf466e5e7c1af222"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/JackyCover-纸蓝剪纸互动-3x4-v3.png",
+      "bytes": 1961568,
+      "sha256": "4b9af0346061438c3ce2eb77ac7f32ffb6c39b5db89cbdcf39a5e1d221b4cf9e"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/JackyCover-纸蓝剪纸互动-3x4-v4.png",
+      "bytes": 1892005,
+      "sha256": "e78a1dcbe51a997d5b8ddcdb97e6a2bce56be60939b763e7862794b2ea6cc817"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧原照重做/layers/background.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧原照重做/layers/black-mask.png",
+      "bytes": 8318,
+      "sha256": "4773f00ece5fbb2399a20e69914fab64b28f8dfdd79c634afa974d4bc6b18155"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧原照重做/layers/foreground.png",
+      "bytes": 973006,
+      "sha256": "7df879573ae2a14c3bb857da6d81725e94e5dd299143f6b2251a5e53cec6bd91"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧原照重做/layers/pre-mask.png",
+      "bytes": 2009988,
+      "sha256": "ce91556d0f07bf2e3665ee20423f0216003a632846555e17c374267947253a8c"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧原照重做/layers/text.png",
+      "bytes": 39830,
+      "sha256": "29c5aec50395a10dc99a17529dcc9613ec23829983c4676be26ec2778ea9fbef"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧原照重做/layers/thumbnail.png",
+      "bytes": 113825,
+      "sha256": "bc56957d5c66c26521d048020aeea918efd35de3320f2fee31783c6b0b4cfdda"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧原照重做/如何发挥-GrokBot最强实力.png",
+      "bytes": 1468126,
+      "sha256": "0558f2381fbbbd42824cb0569d29c04ad2fd7fc2bd521d35f61fcdd8e8cfbf81"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧最强实力测试/layers/background.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧最强实力测试/layers/black-mask.png",
+      "bytes": 8318,
+      "sha256": "4773f00ece5fbb2399a20e69914fab64b28f8dfdd79c634afa974d4bc6b18155"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧最强实力测试/layers/foreground.png",
+      "bytes": 977515,
+      "sha256": "03a837218b56783fa163f99eebdf6103370c2a09bc9f27705eccc11022dd5292"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧最强实力测试/layers/pre-mask.png",
+      "bytes": 2035921,
+      "sha256": "295842aae2483f68846f968aa1128c585321306358228cbc9d79cecbb9179759"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧最强实力测试/layers/text.png",
+      "bytes": 36989,
+      "sha256": "6d6523d2d145812cb7b62279a13ba0ec429a08ccd889a99c076ebd86e235b9c6"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧最强实力测试/layers/thumbnail.png",
+      "bytes": 115795,
+      "sha256": "b32e0a85978158d33ac0bd06ca907beb2123a7ea0cc62fa4a58d65f99ae28fc5"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧最强实力测试/如何发挥GrokBot最强实力.png",
+      "bytes": 1485776,
+      "sha256": "8dd15d4d1c77684eb5d67917517040a7dce4f15371a6d9a77c6dde3e00752c80"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧最强实力测试-Bot军团/layers/background.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧最强实力测试-Bot军团/layers/black-mask.png",
+      "bytes": 8318,
+      "sha256": "4773f00ece5fbb2399a20e69914fab64b28f8dfdd79c634afa974d4bc6b18155"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧最强实力测试-Bot军团/layers/foreground.png",
+      "bytes": 930118,
+      "sha256": "e4cbba908acf84c7e6ec58176f7500a09240c2b7345fbad437e88340b86e8f3c"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧最强实力测试-Bot军团/layers/pre-mask.png",
+      "bytes": 2012970,
+      "sha256": "a0cab8f043b771480451e8f8c8f93516147e352288c768a815b97ab2af1d931b"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧最强实力测试-Bot军团/layers/text.png",
+      "bytes": 36991,
+      "sha256": "0dc1bf1279b19f7530c19944b92bb5c3c6895dd34badfad6899eb68a639c67bf"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧最强实力测试-Bot军团/layers/thumbnail.png",
+      "bytes": 114666,
+      "sha256": "6098c7702944a9b05e691462d012fb51f78335a703e53d7d20ae21ac8827ded4"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧最强实力测试-Bot军团/如何发挥GrokBot最强实力.png",
+      "bytes": 1463312,
+      "sha256": "9c18518636522afb9639187ef0005c49bfe498fca97a65765fee0a9a99a57675"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧标题下三分之一/layers/background.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧标题下三分之一/layers/black-mask.png",
+      "bytes": 8318,
+      "sha256": "4773f00ece5fbb2399a20e69914fab64b28f8dfdd79c634afa974d4bc6b18155"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧标题下三分之一/layers/foreground.png",
+      "bytes": 973006,
+      "sha256": "7df879573ae2a14c3bb857da6d81725e94e5dd299143f6b2251a5e53cec6bd91"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧标题下三分之一/layers/pre-mask.png",
+      "bytes": 2009988,
+      "sha256": "ce91556d0f07bf2e3665ee20423f0216003a632846555e17c374267947253a8c"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧标题下三分之一/layers/text.png",
+      "bytes": 44979,
+      "sha256": "286955f4ad663c7ea210f551db0c88b5e7c3ab16951d649e03fbf4ce50d41fdf"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧标题下三分之一/layers/thumbnail.png",
+      "bytes": 114541,
+      "sha256": "613d5b3daf42f70417fe94b2eb3cd0faac7542956c4959d3aa728a7033735ec5"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧标题下三分之一/如何发挥-GrokBot最强实力.png",
+      "bytes": 1436603,
+      "sha256": "c85881ccf376750a2d7febd03f464d42644ea0ea0eaf3441c6984d6c14b8b04c"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧标题收紧与上部提亮/layers/background.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧标题收紧与上部提亮/layers/black-mask.png",
+      "bytes": 8060,
+      "sha256": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧标题收紧与上部提亮/layers/foreground.png",
+      "bytes": 973006,
+      "sha256": "7df879573ae2a14c3bb857da6d81725e94e5dd299143f6b2251a5e53cec6bd91"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧标题收紧与上部提亮/layers/pre-mask.png",
+      "bytes": 2009988,
+      "sha256": "ce91556d0f07bf2e3665ee20423f0216003a632846555e17c374267947253a8c"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧标题收紧与上部提亮/layers/text.png",
+      "bytes": 42819,
+      "sha256": "2f094cbab4e81762742c416c62df36b89a21e52ab0a08dc1f1fe8ab6f2638d43"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧标题收紧与上部提亮/layers/thumbnail.png",
+      "bytes": 113455,
+      "sha256": "41bc6039f676eb4059189290682ea3698e72188c42b0e0d4cc80cb865407f15e"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/右侧标题收紧与上部提亮/如何发挥-GrokBot最强实力.png",
+      "bytes": 1443035,
+      "sha256": "496ea35109528b210c21a2ffcc4c9a2d2ff4957df15ecec2fefb07870beecdbd"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v1/JackyCover-分层模板试版.png",
+      "bytes": 1370019,
+      "sha256": "45d782216fab81f81ee2dc88abf1c50bfc4f210144c4b697d25bcc5ae995d4c3"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v1/layers/background.png",
+      "bytes": 967710,
+      "sha256": "4ad08141787823641c31b170a95a29778f850c520b2720d4de995385394360fe"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v1/layers/black-mask.png",
+      "bytes": 9776,
+      "sha256": "4001ed28e361b73982657c2d2ef2f8acf96af9fe45c47ec90c4d062167493bb1"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v1/layers/foreground.png",
+      "bytes": 956402,
+      "sha256": "3bf5d66c4c3bfce64369993628d25bc9f308477dd28fc9cccc91c873cc6df55e"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v1/layers/pre-mask.png",
+      "bytes": 1613360,
+      "sha256": "3048aef9e892be473b8c512634f7a67c9ea3c35697ee50ffc0c8270c35034ba4"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v1/layers/text.png",
+      "bytes": 36895,
+      "sha256": "84fec41d878381e68ddec0d4ae938fff7e041fd2d722d3308c8c63f0c63f64f8"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v1/layers/thumbnail.png",
+      "bytes": 110097,
+      "sha256": "90b6bcfabe8480cff8da628aaebed933dbb40b5e69433d1e66192c7ad60d0e55"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v2/JackyCover-暖纸局部蓝晕.png",
+      "bytes": 1179428,
+      "sha256": "8d515425d7d69baf7944b3c3f16f5e330d97b4123650b1a1aba5bc0569afdfbe"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v2/layers/background.png",
+      "bytes": 750444,
+      "sha256": "b71a6ba1b8df5761cbe583845e88571e7e2a3e418146f0dc596bcffb892a0dd1"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v2/layers/black-mask.png",
+      "bytes": 9857,
+      "sha256": "a151a92f42614eafacf99c342e198d63b69acdfa5eb142ff0a88ea20c680e4dc"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v2/layers/foreground.png",
+      "bytes": 956069,
+      "sha256": "71399e671cb996a3f43b02de34560de5bafbad9f2077569d42a49c950823b986"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v2/layers/pre-mask.png",
+      "bytes": 1459123,
+      "sha256": "7d768cf3181235045cf028b136c9d8d3f8c7283cfbd6c27d9a60ead490054fc4"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v2/layers/text.png",
+      "bytes": 36897,
+      "sha256": "9267b04841d5f4f2af3e185ce1f2bcef37201fd4584516634028a4dd4be439fe"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v2/layers/thumbnail.png",
+      "bytes": 96217,
+      "sha256": "1186f9bf858dda51f7b5ce85bf3ed8b6a26cf50a54188c3540914a0a5308cbd2"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v3/JackyCover-参考纸蓝底-清晰人物.png",
+      "bytes": 1478469,
+      "sha256": "26bca96666baac141ea9d3f3294e2c8e2146a9750e72d63a50b5dc3da6e666c8"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v3/layers/background.png",
+      "bytes": 1528823,
+      "sha256": "533cfd9079084f7facc45076049527c897e033a6f5c3eb37dcaea9d739151591"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v3/layers/black-mask.png",
+      "bytes": 8172,
+      "sha256": "c5095ea6bf64bfff945ff1f7cbfd6b5835501c502a5108feba1e4582b3e85b34"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v3/layers/foreground.png",
+      "bytes": 956069,
+      "sha256": "71399e671cb996a3f43b02de34560de5bafbad9f2077569d42a49c950823b986"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v3/layers/pre-mask.png",
+      "bytes": 1973951,
+      "sha256": "925cff6fe6155e671d7fc00b31ec347a25bf5e653b81fadac1283942b5b3da1b"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v3/layers/text.png",
+      "bytes": 36897,
+      "sha256": "9267b04841d5f4f2af3e185ce1f2bcef37201fd4584516634028a4dd4be439fe"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v3/layers/thumbnail.png",
+      "bytes": 114329,
+      "sha256": "03bcd6ab34034040895e6e1baa95f3459c5ae9b474b9de0b30ea65b27441180c"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v4/JackyCover-纯蓝纸底-自然渐变.png",
+      "bytes": 1460292,
+      "sha256": "5bcd2b5dd9a4a5bd17c547bba082d4a73d74bb037b763e9833278ee5c2eebb52"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v4/layers/background.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v4/layers/black-mask.png",
+      "bytes": 8318,
+      "sha256": "4773f00ece5fbb2399a20e69914fab64b28f8dfdd79c634afa974d4bc6b18155"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v4/layers/foreground.png",
+      "bytes": 956069,
+      "sha256": "71399e671cb996a3f43b02de34560de5bafbad9f2077569d42a49c950823b986"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v4/layers/pre-mask.png",
+      "bytes": 2008423,
+      "sha256": "49823e785b32cd4fc2b9caf22582ab13532d30b30f970307a9d17c2af3cc75f3"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v4/layers/text.png",
+      "bytes": 36897,
+      "sha256": "9267b04841d5f4f2af3e185ce1f2bcef37201fd4584516634028a4dd4be439fe"
+    },
+    {
+      "path": "experiments/paper-blue/输出版本/模板v4/layers/thumbnail.png",
+      "bytes": 116402,
+      "sha256": "0773a99cb1609d9ca061176a13c8c32a078739c1fed217dd26922f3969d42e04"
+    },
+    {
+      "path": "skills/jacky-cover/assets/covers/black-gradient-v7.png",
+      "bytes": 8060,
+      "sha256": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4"
+    },
+    {
+      "path": "skills/jacky-cover/assets/covers/masters/paper-blue-paper-master-v3.png",
+      "bytes": 1528823,
+      "sha256": "533cfd9079084f7facc45076049527c897e033a6f5c3eb37dcaea9d739151591"
+    },
+    {
+      "path": "skills/jacky-cover/assets/covers/paper-blue-interaction-v4.png",
+      "bytes": 1576427,
+      "sha256": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f"
+    },
+    {
+      "path": "skills/jacky-cover/assets/fonts/Alibaba-PuHuiTi-Bold.ttf",
+      "bytes": 9367284,
+      "sha256": "8af30eb7415fb7c9dc3518cce5cc8e9afbdce09831ccaa7361774b21273f67fb"
+    },
+    {
+      "path": "skills/jacky-cover/assets/fonts/LXGWWenKai-Regular.ttf",
+      "bytes": 25486932,
+      "sha256": "b64b7add297672bf04c54ce229678ddf09b4f9671cb1ece1f24c868f4226edd0"
+    },
+    {
+      "path": "skills/jacky-cover/assets/fonts/字体传奇南安体-免费商用.ttf",
+      "bytes": 4963132,
+      "sha256": "ea72e7004475306bb0776a9d3fc27f2ae98dc64d37de04ebdda2dd473f6d324c"
+    },
+    {
+      "path": "skills/jacky-cover/assets/jacky-reference-casual.jpg",
+      "bytes": 328789,
+      "sha256": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08"
+    },
+    {
+      "path": "skills/jacky-cover/assets/jacky-reference-front.jpg",
+      "bytes": 12498631,
+      "sha256": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884"
+    },
+    {
+      "path": "skills/jacky-cover/assets/jacky-reference-gesture.jpg",
+      "bytes": 12341114,
+      "sha256": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f"
+    },
+    {
+      "path": "skills/jacky-cover/assets/jacky-reference-side.jpg",
+      "bytes": 1432047,
+      "sha256": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8"
+    },
+    {
+      "path": "skills/jacky-cover/assets/pose-references/01-phone-forward.png",
+      "bytes": 713899,
+      "sha256": "a6d19f1e9e9c25dead31692c923e9ec6a92f44f586c77799f07b91721c1d6c9d"
+    },
+    {
+      "path": "skills/jacky-cover/assets/pose-references/02-laptop-present.png",
+      "bytes": 928963,
+      "sha256": "2ddbb6cdf68b279489b16e852370fc508fc82eba545110404a24bcf2cee9ee08"
+    },
+    {
+      "path": "skills/jacky-cover/assets/pose-references/03-phone-demo.png",
+      "bytes": 603529,
+      "sha256": "240b8b881a8afdb94d56f2a1b52877158f5e1d07a68779ffa34a96b76e45882e"
+    },
+    {
+      "path": "skills/jacky-cover/assets/pose-references/04-two-options-compare.png",
+      "bytes": 743181,
+      "sha256": "b144e469133e6bedb2fd8e9befcbe09ad1aed77bafcd544d1fd013f19884c534"
+    },
+    {
+      "path": "skills/jacky-cover/assets/pose-references/05-arms-crossed.png",
+      "bytes": 688896,
+      "sha256": "8f0984271f3304afac0ce4fb41f7ab924c78e2823ea2e47eb16f1feb283bf507"
+    },
+    {
+      "path": "skills/jacky-cover/assets/pose-references/06-dual-direction-guide.png",
+      "bytes": 907771,
+      "sha256": "7aeff62b57bed3fd511ccb6b450cf3e5771fcec063642b0098a6840e840b834f"
+    },
+    {
+      "path": "skills/jacky-cover/assets/pose-references/07-seated-host.png",
+      "bytes": 470376,
+      "sha256": "ffcb7950148db439a0257860fa99e2fd6d00a479ce2f93b26fef2ecc093eb455"
+    },
+    {
+      "path": "skills/jacky-cover/assets/pose-references/08-diagram-guide.png",
+      "bytes": 274451,
+      "sha256": "00bf294fb789e1b1742c055889f439ae41d7889c73d19eed0d14f8b24484cdd6"
+    },
+    {
+      "path": "skills/jacky-cover/assets/pose-references/09-team-orchestration.png",
+      "bytes": 471826,
+      "sha256": "fece09fc35c0ea957bacb173f3b4cd9bc1a0c7065d9ed80242d8dd036668cdbc"
+    },
+    {
+      "path": "skills/jacky-cover/assets/pose-references/10-six-pose-overview.png",
+      "bytes": 4817656,
+      "sha256": "76e35e763e7007d7a5a24f5f57cdfdb1dac9ed9cc83447522d79a089862d2227"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/covers/clean-window-3x4-v1.png",
+      "bytes": 578016,
+      "sha256": "b5a059951563c5ba1f9821e98e6e45df926d280fd1f947b98ec6ee07611eb405"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/examples/information-visualization/01-annotated-evidence.png",
+      "bytes": 1700089,
+      "sha256": "2759e7dcc8a3596678278a27231cfa91a8c6a65058bc6115ca3a61dd4cda93ef"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/examples/information-visualization/02-timeline-dashboard.png",
+      "bytes": 2044446,
+      "sha256": "3a4040b0acd565ffb7472359f29cd7a2b142e68d21d8df257f77d55808898c6c"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/examples/information-visualization/03-data-story.png",
+      "bytes": 1812547,
+      "sha256": "db7b2d813f8aa2007419ddca75498f657cbc9e1d5a94f23d2f9c6c7dd3701f65"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/examples/paper-blue/01-scene-metaphor-16x9-v2.png",
+      "bytes": 2057884,
+      "sha256": "16f0ab62a44b75aebc5ec073a6235e1c1ed4068b7c8937b1582e8b40918a30f4"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/examples/paper-blue/01-scene-metaphor-16x9.png",
+      "bytes": 2011562,
+      "sha256": "f4977736c8af9a90915da56436c0e4e0c3e10eb3cdd7abdf4c17563bd943e7ca"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/examples/paper-blue/02-knowledge-diagram-16x9-v2.png",
+      "bytes": 2041419,
+      "sha256": "7a98b8fa1990224353176627719775084f56061d434578bab0ce3e0a3414faef"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/examples/paper-blue/02-knowledge-diagram-16x9.png",
+      "bytes": 2077717,
+      "sha256": "f514a64307dc8aae57bb0ae155d3b34a13f43a61e4d41c5bf37c8d7a436684b9"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/examples/paper-blue/03-information-visualization-3x4-v2.png",
+      "bytes": 2365252,
+      "sha256": "637927dc37bf2252bdea03f41f8bc93000ad0ee4d3ae62e78bf4c34f9acabb41"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/examples/paper-blue/03-information-visualization-3x4.png",
+      "bytes": 2897180,
+      "sha256": "ca3719a9ca67d8595f7e6e0138901ac30fdf5ee646d53dca5b23fe09849b41a3"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/ip/jacky-headline-avatar-v1.png",
+      "bytes": 1204997,
+      "sha256": "496a55ecbcb277269eec67938784e12b814e4ef0c49dbf046f007bba3d16098b"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/ip/jacky-portrait-window-v1.png",
+      "bytes": 760883,
+      "sha256": "d614eff45d0b7374fa7e75c83c2fb76b73459686f655352a577a4c15fb0bead1"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/ip/yazai-ai-creation-v1.png",
+      "bytes": 1345077,
+      "sha256": "4d58e1a9bdc7d7426b7eed60fbd4d29d80ce20d2441cb715174d47a0d36a1203"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/ip/yazai-ai-monetization-v1.png",
+      "bytes": 1415681,
+      "sha256": "e1e26ce2f2b3aefde78413b76b2ce5b72859ad9772d8adb98190b755392daa37"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/ip/yazai-ai-programming-v1.png",
+      "bytes": 1428191,
+      "sha256": "f0e253ce1a935786b3109e3e8dab4989bc3666eec006c894c7a1c4048e348a96"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/ip/yazai-ai-tools-v1.png",
+      "bytes": 1379780,
+      "sha256": "d090981ed02f5de5ee009c587482291397a2a6a1ae1ee6377310b5b97cc3c256"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/ip/yazai-canonical-front-v1.png",
+      "bytes": 1057739,
+      "sha256": "564f0238c7942af2bf41629909a6c08253706d5039d1bf178495c21bcfdc3410"
+    },
+    {
+      "path": "skills/jacky-illustration/assets/ip/yazai-paper-blue-anchor-v1.png",
+      "bytes": 2549392,
+      "sha256": "3f2a18c4e59c826edda99c2862881a5584fd6b9beff581f0c834606277d7ec8e"
+    }
+  ]
+}

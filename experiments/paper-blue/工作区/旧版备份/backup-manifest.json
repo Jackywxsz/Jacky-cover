@@ -1,0 +1,16 @@
+{
+  "archive": "jacky-cover-legacy-before-template-v1.tar.gz",
+  "archive_sha256": "43b8cb25a8311aafdd306949d96a2f59ec0be1935016002cc07b0182f60afe0d",
+  "files": {
+    "SKILL.md": "8e971c6b200d10def73eebc4de22d3827aad179ccfcaf157092b92feac4ab3d1",
+    "references/visual-system.md": "6bc7cd6faaa42f7825e50f83a867b1331ed4917f3ba8df26f60961f0046512cd",
+    "tests/test_validate_run.py": "1519b052c7eb2a3e4e8e4f06662ed9a8d6c6479bda06343480cc0d75b9974dc7",
+    "agents/openai.yaml": "40276dec135b9e23fa5ca7cd6a5e7ce9a018586d753bcd12c6c1c725a7e3c4bc",
+    "scripts/validate_run.py": "a99c5888d95654a72070454aaef87755c5c0cf0985ef584d8fb89b4022dc895a",
+    "assets/jacky-reference-casual.jpg": "4c56be6f5f107816f3e249c9a7dd47d2a3ec2e48f64fa73b686419fa2855ef08",
+    "assets/jacky-reference-front.jpg": "18dc2a499f30a063dd0ead5cc901571a11816baebf20368c067f7b9caa339884",
+    "assets/jacky-reference-side.jpg": "eae055a7bcd4b938a0f7d197ecdba7f225d213ed71c936251bfec3126b6ce6c8",
+    "assets/jacky-reference-gesture.jpg": "95134980ecee245787f8a5ee51e374ccc5c481ab72e91d407501e65d2a63155f",
+    "tests/__pycache__/test_validate_run.cpython-313.pyc": "1679059624cdee7a794e22e8782496539412ba17eb65d714582365dd257df1b3"
+  }
+}
