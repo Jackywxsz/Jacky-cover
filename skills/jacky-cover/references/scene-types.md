@@ -7,7 +7,7 @@
 
 1. **芽仔是微观世界的主角**：由它推进、执行、串联；Jacky 托着、举着、指着或摆放它所在的物件，手和物件有真实接触。
 2. **只要一个主物件**（如微缩场景、设备、窗口、跑道、卷轴……按内容定）。面板类一律画成苹果风圆角窗口（红黄绿三点、3D 倾斜、干净 UI），不画灰色平板。
-3. **只写一个瞬间**：先一句事件，再写 Jacky 两只手、芽仔动作、物件上有什么、遮挡关系。不写坐标，不堆禁词。
+3. **只写一个瞬间**：先一句事件，再写物件放在 Jacky 手托 / 手指的哪里、芽仔动作、物件上有什么、遮挡关系。Jacky 的身体照动作参考，不在提示词里重新描述他的站姿和手臂。不写坐标，不堆禁词。
 
 ## 风格库（给用户出方案时从这里选）
 
@@ -27,11 +27,11 @@
 ## 固定段（每次原文附在提示词末尾）
 
 ```
-Identity: images 1 and 2 are original photos of the SAME real man; keep his exact face shape, eyes, eyebrows, nose, lips, ears, short spiky black undercut hair, skin tone and age; no glasses. He wears a plain BLACK CREW-NECK SHORT-SLEEVE T-shirt. Natural, warm, approachable expression, not exaggerated. Photorealistic skin, both arms complete, five fingers per hand. Natural upright posture: head, neck, shoulders, chest and hips on one consistent axis and facing the same direction, no twist or mismatch between upper and lower body. If he reaches toward the scene, his whole torso turns toward it and he uses the arm nearer to the scene with the elbow slightly bent, the arm clearly growing out of that shoulder; never a frontal torso with an arm bolted on sideways.
-Pose (image 4): a pose reference of the same man; copy only his body angle, arm and hand positions and head direction. Ignore its face, background and any props in it unless stated above; his identity always comes from images 1 and 2.
+Identity: images 1 and 2 are original photos of the SAME real man; keep his exact face shape, eyes, eyebrows, nose, lips, ears, short spiky black undercut hair, skin tone and age; no glasses. He wears a plain BLACK CREW-NECK SHORT-SLEEVE T-shirt. Natural, warm, approachable expression, not exaggerated. Photorealistic skin, both arms complete, five fingers per hand.
+Body (image 4): image 4 is this man's body for this picture. Keep his body exactly as in image 4 — same pose, same arm and hand positions, same body proportions, shoulder width and head-to-body ratio; do not slim, shrink, stretch or re-pose him. Objects described above go where his hands already hold or point. Ignore image 4's background and any props in it unless stated above; check his face against images 1 and 2.
 Yazai (image 3) is a small physical collectible figure (vinyl toy, about the height of a coffee mug unless stated) with exactly this design: big round white helmet, two green sprout leaves on top, featureless glossy black visor with ONE soft reflection on one side, gray round ear covers, red arm bands, white/blue/red chest buttons, short body, short legs, round boots. Only one Yazai; other small characters must look clearly different (e.g. small gray round robots).
 Look: photorealistic, cinematic soft studio key light, crisp detail; Yazai and props are real 3D physical objects with real shadows and reflections. Any screen or panel is a premium Apple-style window: rounded corners, a thin light frame, red/yellow/green traffic-light dots at top-left, clean minimal UI with soft depth, slightly tilted in 3D perspective — never a plain gray board. No readable words anywhere.
-Framing: SQUARE 1:1 image. The whole group (the man plus the metaphor scene) sits in the middle of the square with a wide EMPTY transparent margin on the left, right and top (at least one tenth of the width on each side): his head, both shoulders, both elbows, both hands and every object stay well away from the left, right and top edges. The group is a little TALLER than it is wide (about 4 wide : 5 tall): about 75% of the square's width, from just below the top margin down to the bottom edge — not a wide, flat strip. By default his body continues down to about his hips, with the main object in front of his lower torso where possible so the body cut is naturally hidden; by default he is on the right half of the group and the metaphor scene with Yazai on the left half and upper part, at least as large as his upper body — unless this moment is described differently above.
+Framing: SQUARE 1:1 image. The man is framed as in image 4 (cut at the waist by the bottom edge) and as large as possible: from just below the top margin down to the bottom edge, on the right part of the square. The metaphor scene with Yazai sits where his hands hold or point (usually the left and upper part), at least as large as his upper body. Keep a wide EMPTY transparent margin on the left, right and top (at least one tenth of the width): his head, shoulders, hands and every object stay well away from those edges.
 Cut-out: fully transparent background (real alpha) around the man and the objects; NO room, NO wall, NO desk surface, NO floor, NO backdrop, NO text, NO title, NO dark gradient. Only the man and the described objects exist.
 ```
 
