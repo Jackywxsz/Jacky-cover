@@ -122,7 +122,7 @@ def font_file(spec, override=None):
     return found.resolve()
 
 
-def place_scene(path, p, anchor_cut=False):
+def place_scene(path, p, anchor_cut=True):
     with Image.open(path) as source:
         require(source.format == 'PNG' and 'A' in source.getbands(), 'Scene must be a PNG with real alpha')
         require(not getattr(source, 'is_animated', False), 'Animated scene is unsupported')
@@ -136,8 +136,8 @@ def place_scene(path, p, anchor_cut=False):
     subject = im.crop(bbox)
     w, h = p['size']
     x0, y0, x1, y1 = [round(v*(w if i%2==0 else h)) for i,v in enumerate(p['scene_box'])]
-    # Detect an exposed torso cut; only when the caller asks (nothing in the scene hides it)
-    # is the cut anchored low behind the title shadow.
+    # Detect a torso cut and by default anchor it low behind the title shadow, so the body
+    # sinks into black instead of dissolving over light paper (grey haze).
     # Detected by shape: the lowest rows of the subject form a wide flat opaque cut.
     # Faint generator haze is ignored when locating the real lower edge.
     solid = a.point(lambda v: 255 if v > 40 else 0).getbbox()
@@ -178,7 +178,7 @@ def place_scene(path, p, anchor_cut=False):
 def render(scene_path, text, font=None, note_font=None, root=ROOT):
     p, base, mask, manifest = load_template(root)
     scene_path = Path(scene_path).expanduser().resolve()
-    scene, placement = place_scene(scene_path, p, anchor_cut=text.get('hide_cut_behind_title', False))
+    scene, placement = place_scene(scene_path, p, anchor_cut=text.get('hide_cut_behind_title', True))
     lines = text.get('lines', [])
     require(len(lines)==2, 'Exactly two title lines are required')
     for line in lines:

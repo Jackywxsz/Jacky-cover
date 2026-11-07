@@ -144,9 +144,9 @@ class CoverTests(unittest.TestCase):
     def test_body_cut_anchors_to_canvas_bottom(self):
         im=Image.new('RGBA',(400,400));ImageDraw.Draw(im).rectangle((150,60,330,399),fill=(20,20,20,255))
         src=self.root/'cut-body.png';im.save(src)
-        p,_=c.profile();_,info=c.place_scene(src,p)
+        p,_=c.profile();_,info=c.place_scene(src,p,anchor_cut=False)
         self.assertTrue(info['body_cut_detected']);self.assertFalse(info['body_cut_anchored'])
-        _,info=c.place_scene(src,p,anchor_cut=True)
+        _,info=c.place_scene(src,p)
         self.assertTrue(info['body_cut_anchored'])
         self.assertEqual(info['placed_bbox_before_dissolve'][3],round(1440*.8))
 
