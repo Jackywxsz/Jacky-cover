@@ -1,0 +1,142 @@
+{
+  "template_id": "jacky-paper-blue-interaction-v9",
+  "size": [
+    1080,
+    1440
+  ],
+  "profile_sha256": "6f2b49a8e738296c1bd20a3a29e3e647b465c1422249d3c7ef8275c35a5a15d3",
+  "template_files": {
+    "assets/covers/paper-blue-interaction-v4.png": "121031b31a2dbfef0a26a8506c9821003922b00512643a4ddb71f9f6acfd457f",
+    "assets/covers/black-gradient-v7.png": "be25df27385227c654b5108f5e680a0a5f5dcf5fcf816793774fe9c92b9ef8f4"
+  },
+  "scene_file": "experiments/covers/2026-11-07-opus-ip/foreground-v3-edge.png",
+  "scene_sha256": "ef19cdbca6bc1dbe5a4b7e8fd991606d7d3d44db6cbf07a2c4acbfb57b4f92ea",
+  "scene": {
+    "source_size": [
+      1206,
+      1444
+    ],
+    "source_alpha_bbox": [
+      18,
+      59,
+      1206,
+      1444
+    ],
+    "placed_bbox_before_dissolve": [
+      74,
+      65,
+      1006,
+      1152
+    ],
+    "placed_bbox": [
+      74,
+      65,
+      1006,
+      1149
+    ],
+    "scale": 0.7848375451263538,
+    "source_upscaled": false,
+    "bottom_dissolve_y": [
+      1064,
+      1152
+    ],
+    "top_gap_px": 0,
+    "body_cut_detected": true,
+    "body_cut_anchored": true,
+    "transform": "uniform whole-scene fit; bottom alpha dissolve into title shadow; no RGB/face edits"
+  },
+  "black_gradient": {
+    "interpolation": "smoothstep",
+    "start_y": 0.45,
+    "end_y": 0.89,
+    "max_alpha": 0.94,
+    "sample_y": [
+      0,
+      0.38,
+      0.5,
+      0.6,
+      0.68,
+      0.77,
+      0.9,
+      0.94,
+      1
+    ]
+  },
+  "alpha_8bit_samples": [
+    0,
+    0,
+    9,
+    64,
+    128,
+    196,
+    240,
+    240,
+    240
+  ],
+  "font_file": "Alibaba-PuHuiTi-Bold.ttf",
+  "font_sha256": "8af30eb7415fb7c9dc3518cce5cc8e9afbdce09831ccaa7361774b21273f67fb",
+  "font_family_style": [
+    "Alibaba PuHuiTi",
+    "Bold"
+  ],
+  "font_size": 159,
+  "title_font_sizes": [
+    112,
+    159
+  ],
+  "title_runs": [
+    {
+      "text": "Opus 5.5视频教程",
+      "emphasis": null,
+      "size": 112,
+      "bbox": [
+        76,
+        998,
+        996,
+        1111
+      ]
+    },
+    {
+      "text": "差异化IP打造",
+      "emphasis": "差异化IP",
+      "size": 159,
+      "bbox": [
+        76,
+        1137,
+        1004,
+        1288
+      ]
+    }
+  ],
+  "title_boxes": [
+    [
+      76,
+      998,
+      996,
+      1111
+    ],
+    [
+      76,
+      1137,
+      1004,
+      1288
+    ]
+  ],
+  "title_region_bbox": [
+    0,
+    893,
+    1080,
+    1440
+  ],
+  "title_line_gap_px": 26,
+  "note": null,
+  "self_check": "technical_checks_passed_visual_review_required",
+  "user_acceptance": "not_claimed",
+  "visual_review_required": [
+    "original-photo likeness and skin",
+    "body orientation consistent and arms connected",
+    "Yazai identity as 3D figure",
+    "semantic relationship",
+    "overall reference family and phone thumbnail"
+  ]
+}
