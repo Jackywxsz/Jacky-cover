@@ -1,6 +1,6 @@
 # Jacky Cover
 
-做 Jacky 视频封面的 Skill：Jacky 真人 + 芽仔 3D 手办组成一个隐喻场景，透明抠图加白边贴到纸蓝底上，下方渐变黑蒙版 + 普惠体两行标题 + 霞鹜文楷小字，输出 3:4 竖图。
+做 Jacky 视频封面的 Skill：Jacky 真人 + 芽仔 3D 手办演出这期主题的图解场景，透明抠图加白边贴到纸蓝底上，下方渐变黑蒙版 + 普惠体两行标题 + 霞鹜文楷小字，输出 3:4 竖图。
 
 - **当前实现**：`skills/jacky-cover/`（`main` 分支即当前版本，2026-11-07 定稿）。
 - **入口**：[skills/jacky-cover/SKILL.md](skills/jacky-cover/SKILL.md)，只从这里加载规则。
@@ -57,7 +57,7 @@ python3 -m venv .venv
 cd skills/jacky-cover && PYTHONDONTWRITEBYTECODE=1 ../../.venv/bin/python -m unittest discover -s tests -v
 ```
 
-测试只证明脚本和素材正确，不能证明人物、隐喻和审美过关；这些靠每期的自检和用户验收。
+测试只证明脚本和素材正确，不能证明人物、画面和审美过关；这些靠每期的自检和用户验收。
 
 ## 素材
 

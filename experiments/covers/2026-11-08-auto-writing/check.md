@@ -9,5 +9,9 @@
 - 构图：`top_gap_px`=84，身体沉进标题后黑色。
 - 成品：`cover-v1.png`。
 
+## v1b（只改合成，不重新生图）
+- 用户：整体构图偏下。原因：脚本检测到半身切口就把场景下移，但这期电脑已经挡住了切口，不需要下移。按 SKILL 第 4 节写 `"hide_cut_behind_title": false`，场景顶到上方安全边（`top_gap_px`=0），电脑底边淡入黑区。
+- 成品：`cover-v1b.png`。
+
 ## user_acceptance
-待用户反馈。
+v1 构图偏下，已出 v1b，待反馈。
