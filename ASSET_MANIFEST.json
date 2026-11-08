@@ -1880,6 +1880,16 @@
       "path": "skills/jacky-cover/assets/poses/K26.png",
       "bytes": 1982098,
       "sha256": "6f065796133671734bf1410a82862a6c4ecb15aded87be9bf4ecfd12f8c24c92"
+    },
+    {
+      "path": "skills/jacky-cover/assets/poses/K27.png",
+      "bytes": 1792155,
+      "sha256": "06650aaf876679b90d89b28615f2b7a5380d5102dd4d8593936b92ddc5f977a7"
+    },
+    {
+      "path": "skills/jacky-cover/assets/poses/K28.png",
+      "bytes": 1825728,
+      "sha256": "4296f644e4a582d8c4ffefda4072f51dafc044b96948f973f9caad0f57c9ee83"
     }
   ]
 }
