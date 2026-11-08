@@ -1845,6 +1845,41 @@
       "path": "skills/jacky-cover/assets/poses/K18.png",
       "bytes": 1883711,
       "sha256": "cd6dc08370571bd3a6c2658343a0ed4c3158c6019cc77e4458b7a35c46a4e659"
+    },
+    {
+      "path": "skills/jacky-cover/assets/poses/K20.png",
+      "bytes": 1708756,
+      "sha256": "dc99dbb17c1f0d3d37857e724b1d17c79ed40c4432cdf2d8ea347fd5d5efbe6f"
+    },
+    {
+      "path": "skills/jacky-cover/assets/poses/K21.png",
+      "bytes": 1832481,
+      "sha256": "2e6e371a1652e3664baced9be4ecf57d4b28be07af936013f8ca774387908028"
+    },
+    {
+      "path": "skills/jacky-cover/assets/poses/K22.png",
+      "bytes": 1934850,
+      "sha256": "dc1b7a9cbfb1d2a9e5fd71d5ce26dea77ed40b0831a09533bad08c72aec3659b"
+    },
+    {
+      "path": "skills/jacky-cover/assets/poses/K23.png",
+      "bytes": 1832826,
+      "sha256": "c9ad6c132a8d026bf3255240b12c2f804be4d102a3381e445d00a962573c031a"
+    },
+    {
+      "path": "skills/jacky-cover/assets/poses/K24.png",
+      "bytes": 1790792,
+      "sha256": "9cd1b097b329e057402c78eaa35fa564623d521528a41508e7cd281d9b6ae177"
+    },
+    {
+      "path": "skills/jacky-cover/assets/poses/K25.png",
+      "bytes": 1870161,
+      "sha256": "8feeaa71802306f98588434e1100094b2cef03b4f0c3494e646685842a39572d"
+    },
+    {
+      "path": "skills/jacky-cover/assets/poses/K26.png",
+      "bytes": 1982098,
+      "sha256": "6f065796133671734bf1410a82862a6c4ecb15aded87be9bf4ecfd12f8c24c92"
     }
   ]
 }
