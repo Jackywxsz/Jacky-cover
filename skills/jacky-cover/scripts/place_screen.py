@@ -16,13 +16,42 @@ def key_score(rgb):
     return ImageChops.subtract(ImageChops.darker(r, b), g)  # magenta-ness: min(R,B) - G
 
 
+def fit_line(pts):
+    # Least squares t = k*u + c, then once more without points >3px off (rounded corners, occluders).
+    for _ in range(2):
+        n = len(pts); su = sum(u for u, _ in pts); st = sum(t for _, t in pts)
+        suu = sum(u*u for u, _ in pts); sut = sum(u*t for u, t in pts)
+        k = (n*sut - su*st) / max(1e-9, n*suu - su*su); c = (st - k*su) / n
+        kept = [(u, t) for u, t in pts if abs(t - (k*u + c)) <= 3]
+        if len(kept) < 10: break
+        pts = kept
+    return k, c
+
+
 def corners(mask):
-    # Extreme points of the screen area: works for a flat screen seen in perspective.
-    w = mask.width
-    pts = [(i % w, i // w) for i, v in enumerate(mask.getdata()) if v]
-    tl = min(pts, key=lambda p: p[0] + p[1]); br = max(pts, key=lambda p: p[0] + p[1])
-    tr = max(pts, key=lambda p: p[0] - p[1]); bl = min(pts, key=lambda p: p[0] - p[1])
-    return [tl, tr, br, bl], len(pts)
+    # Fit a straight line to each side of the screen and intersect them, so rounded screen
+    # corners and a figure covering part of an edge don't pull the corners inward.
+    px = mask.load(); w, h = mask.size
+    rows = {y: [x for x in range(w) if px[x, y]] for y in range(h)}
+    rows = {y: (r[0], r[-1]) for y, r in rows.items() if r}
+    n = sum(mask.histogram()[1:])
+    if len(rows) < 10:
+        return [], 0
+    y0, y1 = min(rows), max(rows)
+    cols = {}
+    for x in range(w):
+        ys = [y for y in range(y0, y1+1) if px[x, y]]
+        if ys: cols[x] = (ys[0], ys[-1])
+    x0, x1 = min(cols), max(cols)
+    mid = lambda lo, hi, v: lo + .2*(hi-lo) <= v <= hi - .2*(hi-lo)
+    left = fit_line([(y, r[0]) for y, r in rows.items() if mid(y0, y1, y)])
+    right = fit_line([(y, r[1]) for y, r in rows.items() if mid(y0, y1, y)])
+    top = fit_line([(x, c[0]) for x, c in cols.items() if mid(x0, x1, x)])
+    bottom = fit_line([(x, c[1]) for x, c in cols.items() if mid(x0, x1, x)])
+    def meet(v, hz):  # v: x = a*y + b ; hz: y = c*x + d
+        a, b = v; c, d = hz
+        y = (c*b + d) / (1 - c*a); return (round(a*y + b), round(y))
+    return [meet(left, top), meet(right, top), meet(right, bottom), meet(left, bottom)], n
 
 
 def quad_area(q):
@@ -64,7 +93,7 @@ def main(argv):
     if n < 0.01 * fg.width * fg.height:
         sys.exit('没找到洋红屏幕：生成时屏幕要画成纯洋红（#FF00FF）')
     coverage = n / max(1, quad_area(q))
-    if coverage < 0.55:
+    if not 0.55 <= coverage <= 1.05:
         sys.exit(f'洋红区域不像一块平的四边形屏幕（覆盖率 {coverage:.2f}），可能角被挡住或屏幕弯曲：重新生成，四个角都露出来')
     # Screen proportions from the quad's average edge lengths.
     d = lambda p, r: ((p[0]-r[0])**2 + (p[1]-r[1])**2) ** .5
@@ -90,7 +119,10 @@ def main(argv):
     spill = key_score(rgb)
     clean = Image.merge('RGB', [ImageChops.subtract(r, spill), g, ImageChops.subtract(b, spill)])
     rgb = Image.composite(clean, rgb, ring)
-    left = key_score(rgb).point(lambda v: 1 if v >= SOFT else 0).histogram()[1]
+    # Only count leftovers on the screen itself; other magenta-ish things (purple frame, pink props) are fine.
+    xs = [p[0] for p in dst]; ys = [p[1] for p in dst]
+    box = (max(0, min(xs)-4), max(0, min(ys)-4), min(fg.width, max(xs)+5), min(fg.height, max(ys)+5))
+    left = key_score(rgb.crop(box)).point(lambda v: 1 if v >= SOFT else 0).histogram()[1]
     rgb.putalpha(fg.getchannel('A'))
     rgb.save(out)
     print(json.dumps({'corners': q, 'key_pixels': n, 'coverage': round(coverage, 3), 'fit': fit, 'magenta_left_px': left}, ensure_ascii=False))
