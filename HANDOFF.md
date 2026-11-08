@@ -4,12 +4,13 @@
 
 用户认可最终方向：生成按 gbro 规则出 3D 内容（Jacky 写实半身 + 芽仔 3D 手办 + 苹果风圆角窗口等立体物件），透明抠图加白色贴纸边，贴到固定纸蓝底；隐喻在上 2/3；标题在下 1/3 并垫渐变黑蒙版。
 - 执行入口：`skills/jacky-cover/SKILL.md`；提示词写法与固定段：`references/scene-types.md`；暗调整图风（可选）：`references/composition.md`。
-- 脚本：`codex_imagegen.sh`（生图）、`sticker_edge.py`（白边 + 裁切检查）、`compose_interaction_cover.py`（合成）、`note_space.py`（量小字空白）。带单元测试（`skills/jacky-cover/tests`）。
+- 脚本：`codex_imagegen.sh`（可选的一种生图方式，生图工具不限）、`sticker_edge.py`（白边 + 裁切检查）、`compose_interaction_cover.py`（合成）、`note_space.py`（量小字空白）。带单元测试（`skills/jacky-cover/tests`）。
 - 标题：两行左对齐、整块居中；第二行铺满，第一行 ×1.15（≤4 字 ×1.3）；底部边距 = 左右边距 × 2。小字霞鹜文楷，按构图放左上或场景与标题之间，与标题左对齐。
 - 关键经验：竖图出图常把肩/臂切掉 → 改为方图四周留空；身体扭曲 → 固定段要求头颈肩胸胯一条轴；数量写死。
 - 验证记录与成品（相对仓库根目录）：`experiments/cover-paper3d/`（定稿测试）、`experiments/covers/`（实跑各期）。其他 `experiments/cover-*`、`pose-library*` 是被否方案的过程记录。
 - 用户补充：每期只生成一张、自检合格才交付，不给用户挑。
 - 用户再改（同日，接力 v3 动作被否后）：先结合主题给 2–3 个风格方案并推荐一个，用户选定后再生图；不再强制和前几期不同，cover-log 只作记录。动作从 K 系列动作参考库选（`assets/poses/`，说明见 `references/pose-library.md`），作为 image 4 只管姿势，身份仍以 front / side 原照为准。
+- 2026-11-08：用户在 Muse 上用 Skill 出图，两张失败（脸不像 / 脸部贴图接缝、没有芽仔、窗口上有字、动作不在库里）。判断原因：Skill 只给了 Codex 一条生图路径，换工具后参考图和固定段没传全，也没禁止贴脸。改为生图工具不限，但四张参考图必须一次传全、传不了就停；纯色底工具生成后抠图；自检加对照图、无文字、无芽仔即重来；禁止贴脸/换脸/局部修脸。按用户要求只改文字，不加脚本。
 - 下一步：用户提供新主题做实测。
 
 

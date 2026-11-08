@@ -13,7 +13,7 @@
 ```
 
 1. **先对方案**：结合主题从风格库（微观世界、身后窗口、举设备、微缩片场……，见 `references/scene-types.md`）给 2–3 个方案，每个写清 Jacky 的动作（动作库编号）、芽仔在推进什么、观众看懂什么，并推荐一个。用户选定后才生图。
-2. **生图**：Codex 内置 image_gen，一次一张，约 10 分钟。参考图依次是 front / side 原照、芽仔锚点、选定的动作参考 `assets/poses/Kxx.png`（只管姿势，身份以原照为准）。
+2. **生图**：工具不限，只要能一次上传多张参考图。四张参考图按顺序一次传全：front / side 原照、芽仔锚点、选定的动作模板 `assets/poses/Kxx.png`（身体照它，脸以原照为准）；传不全就停下。只能出纯色底的工具，生成后抠成透明 PNG。脸不像只能整张重来，不贴脸、不换脸。本机有 `codex` CLI 时可用 `scripts/codex_imagegen.sh`。
 3. **合成**：`sticker_edge.py` 加白边并检查是否被裁切 → `compose_interaction_cover.py` 合成纸蓝底、蒙版、标题 → `note_space.py` 量小字空白。场景偏下时，小字放在左侧大约上 1/3 高度。
 4. **检查**：每期在 `experiments/covers/<日期>-<主题>/check.md` 里分开写自检和用户验收；用户认可前不当范例。
 
@@ -42,7 +42,7 @@
 ln -s <仓库路径>/skills/jacky-cover ~/.claude/skills/jacky-cover
 ```
 
-**云端 Agent**（如 claude.ai/code）：在 GitHub 授权里勾选本仓库即可直接使用私有仓库，默认读 `main`。生图需要已登录的 `codex` CLI；云端没有时，只能做方案、提示词和合成步骤。
+**云端 Agent**（如 claude.ai/code）：在 GitHub 授权里勾选本仓库即可直接使用私有仓库，默认读 `main`。生图用云端 agent 自己的生图工具，按 SKILL.md 第 3 节的参考图要求上传。
 
 **依赖**：Python 3.10+ 和 Pillow（`requirements.txt`）。字体优先读 `~/Library/Fonts`，没有就用仓库自带的。
 

@@ -5,9 +5,9 @@ description: 制作 Jacky 真人与芽仔同框的 3:4 视频封面。默认纸�
 
 # Jacky Cover
 
-默认**纸蓝风**。用户明确要深色/暗调整图时才用[暗调整图风](references/composition.md)：同样定隐喻，照 composition.md 写提示词，用第 3 节命令生成一张 3:4 整图（标题由模型画进图），不加白边、不合成，直接按第 5 节检查（排版项改为“标题逐字正确、在上方三分之一”）。
+默认**纸蓝风**。用户明确要深色/暗调整图时才用[暗调整图风](references/composition.md)：同样定隐喻，照 composition.md 写提示词，按第 3 节的参考图要求生成一张 3:4 整图（标题由模型画进图），不加白边、不合成，直接按第 5 节检查（排版项改为“标题逐字正确、在上方三分之一”）。
 
-**运行约定**：所有命令都在 `skills/jacky-cover/` 目录下运行；`<项目>` = `../../experiments/covers/<日期>-<主题>/`（先 `mkdir -p`）。生图依赖本机已安装并登录的 `codex` CLI。
+**运行约定**：所有命令都在 `skills/jacky-cover/` 目录下运行；`<项目>` = `../../experiments/covers/<日期>-<主题>/`（先 `mkdir -p`）。生图工具不限（见第 3 节的要求），合成只依赖 Python + Pillow。
 
 ```
 选题 → 给 2–3 个风格方案并推荐一个 → 用户选定 → 写提示词 → 生成一张透明方图 → 加白边 → 合成(无小字) → 定小字位置 → 合成成品 → 检查
@@ -33,12 +33,26 @@ description: 制作 Jacky 真人与芽仔同框的 3:4 视频封面。默认纸�
 
 ## 3. 生成与加白边
 
-参考图顺序：`assets/jacky-reference-front.jpg`、`assets/jacky-reference-side.jpg`、`../jacky-illustration/assets/ip/yazai-paper-blue-anchor-v1.png`、选定的动作参考 `assets/poses/Kxx.png`，可选用户素材（最多两张）。每轮只生成一张（Codex 内置 image_gen，约 10 分钟，要后台运行或把命令超时设到 600000ms，否则会被默认 2 分钟超时打断）：
+用你手上任何能“一次上传多张参考图”的生图工具，每轮只生成一张。不管用什么工具，这几条都不能省：
+
+1. **四张参考图一次全部上传，顺序固定**（就是提示词里的 image 1–4）：
+   1. `assets/jacky-reference-front.jpg`（正脸原照）
+   2. `assets/jacky-reference-side.jpg`（侧脸原照）
+   3. `../jacky-illustration/assets/ip/yazai-paper-blue-anchor-v1.png`（芽仔）
+   4. `assets/poses/Kxx.png`（第 1 步选定的动作模板）
+
+   用户素材（logo、截图、参考图）接在后面作 image 5、6。工具一次传不了这四张，或者只能传一张，就**停下告诉用户**，不要少传几张硬生成，也不要用文字描述代替参考图。
+2. **提示词就是 `<项目>/prompt-v1.txt` 全文**，包括末尾的固定段，不改写、不删减。
+3. **背景**：工具能出透明图就直接出透明 PNG。只能出纯色底时，把固定段 `Cut-out` 那行换成 `Background: one flat plain light-gray (#D9D9D9) background, no shadow on it, no gradient, no floor; nothing else in the picture.`，生成后用手上的抠图工具去掉背景，存成带透明通道的 PNG。抠完放大看头发、手指、芽仔叶子和白色物件的边缘，没被抠掉、没有灰边才算过。
+4. 生成需要的时间看工具，可能长达 10 分钟，命令或任务的超时要留够。
+
+存为 `<项目>/foreground-v1.png`，再加白边：
 
 ```sh
-scripts/codex_imagegen.sh <项目>/foreground-v1.png <项目>/prompt-v1.txt assets/jacky-reference-front.jpg assets/jacky-reference-side.jpg ../jacky-illustration/assets/ip/yazai-paper-blue-anchor-v1.png assets/poses/K01.png
 scripts/sticker_edge.py <项目>/foreground-v1.png <项目>/foreground-v1-edge.png
 ```
+
+本机装了 `codex` CLI 时，可以用现成脚本一步生成（参数顺序就是上面的参考图顺序）：`scripts/codex_imagegen.sh <项目>/foreground-v1.png <项目>/prompt-v1.txt <image1> <image2> <image3> <image4>`。
 
 `sticker_edge.py` 报 `CROPPED` 时先看切到的是什么：只是人物的肩或手臂被左/右边切到（动作模板本身是半身近景，常见），就加 `--bleed right`（或 `left`）重跑，合成时那一侧会贴住封面边缘，读起来是身体延伸出画；切到的是头、手或物件，这张作废，按第 5 节重新生成。
 
@@ -77,9 +91,10 @@ python3 scripts/compose_interaction_cover.py --scene <项目>/foreground-v1-edge
 
 看成品原图和 270×360 缩略图，在 `<项目>/check.md` 逐条写：
 
-- **本人**：脸型、五官、发型对照原照；黑圆领短袖；表情自然亲和。
+- **本人**：把生成图和 front 原照、动作模板放在一起看（拼成一张对照图），脸型、五官、发型要认得出是他本人；脸和脖子之间不能有接缝、色差或方框；黑圆领短袖；表情自然亲和。认不出是本人就整张重新生成。
 - **身体**：和选定的动作模板并排对照——姿势、肩宽、头身比、取景没被改（不变小、不变瘦、不拉长）；手指数对，和物件真实接触。被物件自然遮挡一部分没问题。
-- **芽仔**：双叶、黑色无五官面罩加单侧反光、红臂带、胸钮、大头短身圆靴；3D 手办；全图只有一个。
+- **芽仔**：双叶、黑色无五官面罩加单侧反光、红臂带、胸钮、大头短身圆靴；3D 手办；全图只有一个。画面里没有芽仔，说明参考图或固定段没传全，查清楚再重新生成。
+- **无文字**：画面里（窗口、屏幕、卡片上）没有可读的字，字只来自合成脚本排的标题和小字。
 - **一眼看懂**：遮住标题能说出芽仔在推进什么；数量与文案一致。
 - **构图占满**：场景从上方安全区一直延伸到标题后的黑色里——主场景在上 2/3，上面不空一大片，身体下端沉进黑色、不在浅色纸底上淡出成灰雾。上面空太多（报告 `scene.top_gap_px` 明显大于 0）通常是人被画小了、场景铺得太宽，下一轮重新生成，不靠挪位置补。
 - **排版**：白边完整、没有被切；标题逐字正确；小字不压画面、与标题左对齐。
@@ -90,7 +105,8 @@ python3 scripts/compose_interaction_cover.py --scene <项目>/foreground-v1-edge
 
 ## 素材规则
 
-- 人物的脸以 front / side 原照为准；身体（姿势、比例、取景）照 `assets/poses/` 里选定的那张。其他生成图（封面、前景）都不能作为参考输入。
+- 人物的脸以 front / side 原照为准；身体（姿势、比例、取景）照 `assets/poses/` 里选定的那张，不用库外的动作。其他生成图（封面、前景）都不能作为参考输入。
+- 脸不像时只能整张重新生成：不把原照的脸贴到生成图上，不换脸，不局部重绘或修脸。
 - 固定模板（纸蓝底、蒙版）要换，必须出新版本资产，不改旧 PNG。
 - 验证记录：仓库根目录下 `experiments/cover-paper3d/`（流程定稿测试）和 `experiments/covers/`（按流程实跑的每一期）。
 
