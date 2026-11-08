@@ -163,4 +163,24 @@ class CoverTests(unittest.TestCase):
         self.assertEqual(info['bleed_sides'],['right'])
         self.assertEqual(info['placed_bbox_before_dissolve'][2],1080)
 
+    def test_place_screen_fills_magenta_keeps_occluder(self):
+        import subprocess,sys
+        fg=Image.new('RGBA',(400,400))
+        d=ImageDraw.Draw(fg)
+        d.polygon([(60,80),(340,60),(330,300),(70,280)],fill=(255,0,255,255))
+        d.ellipse((170,150,230,210),fill=(240,240,240,255))  # Yazai standing in front of the screen
+        src=self.root/'fg.png';fg.save(src)
+        shot=Image.new('RGB',(160,100),(20,90,200));ImageDraw.Draw(shot).rectangle((0,0,79,99),fill=(250,160,0))
+        sp=self.root/'shot.png';shot.save(sp);out=self.root/'placed.png'
+        r=subprocess.run([sys.executable,str(ROOT/'scripts/place_screen.py'),str(src),str(sp),str(out)],capture_output=True,text=True)
+        self.assertEqual(r.returncode,0,r.stderr)
+        with Image.open(out) as o:
+            self.assertEqual(o.getpixel((200,180))[:3],(240,240,240))   # occluder untouched
+            self.assertLess(abs(o.getpixel((110,180))[0]-250),20)        # left half of screenshot
+            self.assertLess(abs(o.getpixel((300,180))[2]-200),20)        # right half of screenshot
+            self.assertEqual(o.getpixel((10,10))[3],0)                   # transparency kept
+        self.assertEqual(json.loads(r.stdout)['magenta_left_px'],0)
+        r=subprocess.run([sys.executable,str(ROOT/'scripts/place_screen.py'),str(sp),str(sp),str(self.root/'x.png')],capture_output=True,text=True)
+        self.assertNotEqual(r.returncode,0)
+
 if __name__=='__main__':unittest.main()

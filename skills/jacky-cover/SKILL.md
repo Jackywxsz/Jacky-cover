@@ -47,7 +47,15 @@ description: 制作 Jacky 真人与芽仔同框的 3:4 视频封面。默认纸�
 3. **背景**：工具能出透明图就直接出透明 PNG。只能出纯色底时，把固定段 `Cut-out` 那行换成 `Background: one flat plain light-gray (#D9D9D9) background, no shadow on it, no gradient, no floor; nothing else in the picture.`，生成后用手上的抠图工具去掉背景，存成带透明通道的 PNG。抠完放大看头发、手指、芽仔叶子和白色物件的边缘，没被抠掉、没有灰边才算过。
 4. 生成需要的时间看工具，可能长达 10 分钟，命令或任务的超时要留够。
 
-存为 `<项目>/foreground-v1.png`，再加白边：
+存为 `<项目>/foreground-v1.png`。用户给了要上屏幕的截图时（写法见 scene-types.md），先把截图贴进洋红屏幕，后面的步骤都用贴好的这张：
+
+```sh
+python3 scripts/place_screen.py <项目>/foreground-v1.png <截图> <项目>/foreground-v1-screen.png
+```
+
+报错说找不到洋红或四个角被挡，就重新生成；截图比例和屏幕差很多时加 `--fit cover`（铺满、裁掉边）。
+
+再加白边：
 
 ```sh
 scripts/sticker_edge.py <项目>/foreground-v1.png <项目>/foreground-v1-edge.png

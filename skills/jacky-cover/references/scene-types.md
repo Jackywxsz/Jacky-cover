@@ -30,7 +30,15 @@
 
 新构思时可以换的维度：主物件（设备、窗口、模型、机关、书/卷轴、地图、拼图、开关……）、Jacky 的参与方式（托、举、推、指、摆放、观察、拉开、按下）、机位（平视、俯视、近景手部、纵深）、比例（巨人看微缩、等大同框、物件冲向镜头）、芽仔的动作（推、拉、搬、连接、点亮、修理、指挥）。
 
-用户给了 logo、截图、产品形象，作为 image 5、6 上传，写清“image 5 shown on …”，不用通用图标代替，不虚构功能和数字。
+用户给了 logo、产品形象，作为 image 5、6 上传，写清“image 5 shown on …”，不用通用图标代替，不虚构功能和数字。
+
+**用户给了截图、要放在屏幕或面板上**：不让模型照着截图重画（会画错内容、溢出边框）。屏幕留成纯洋红，生成后用 `scripts/place_screen.py` 把真截图按透视贴进去。在提示词里这样写那块屏幕，截图不上传给模型：
+
+```
+The screen of the [laptop / phone / window] is ONE flat solid pure magenta (#FF00FF) area with no reflection, glare, gradient, icon or UI on it; all four corners of the screen stay visible. Yazai may stand in front of a small part of the screen or point at it, but never covers a corner.
+```
+
+芽仔和截图的互动写成它站在屏幕前、指着或推着屏幕上某个位置（如“指着屏幕右上部分”），不写截图里的具体文字。
 
 ## 固定段（每次原文附在提示词末尾）
 
